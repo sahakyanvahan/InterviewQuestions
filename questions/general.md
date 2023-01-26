@@ -1,23 +1,33 @@
-# General 
+<h1 align="center"> General </h1>
+
+<br/><br/>
+
+## 1. Please describe the current project you are working on. Your role in that project. What frameworks, technologies and tools are used there
+### *Answer*
+| **Level** | **Expectaions** |
+|-----------|-------------|
+| **L1**    | See L2      |
+| **L2**    | It is an enterprise project related health care domain for a customer from USA. We use ASP .NET Core and Blazor. We are using Git for source control, GitHub Actions for CI. Our team members use Rider as IDE            |
+| **L3**    | can also be mentioned more specific technologies if they are used, for example RabbitMQ, Azure Service Bus etc. Also worth to mention the environment where project is hosted like Azure or AWS. What services are used there, how they were established.        |
+
+<br/><br/>
 
 ## 1. What is technical debt
 ### *Answer*
-    Technical debt refers to the cost of maintaining and enhancing software over time. It is a metaphor used to describe the trade-off between investing in short-term workarounds, quick-fixes, and other shortcuts to meet immediate needs, and investing in more robust, long-term solutions that may require more time and resources up front.
 
-    The idea is that, just as financial debt incurs interest, technical debt incurs "interest" in the form of extra effort that must be expended in the future to maintain or enhance the software. This extra effort can come in the form of additional development work, increased testing, or higher maintenance costs.
-
-    The goal is to minimize technical debt by designing and building software in a maintainable and scalable way, so that it can be easily updated and extended as business needs change. This is important because as the technical debt increases, it can become harder and more expensive to make changes to the software, which can slow down development and impact the business.
+> Technical debt refers to the cost of maintaining and enhancing software over time. It is a metaphor used to describe the trade-off between investing in short-term workarounds, quick-fixes, and other shortcuts to meet immediate needs, and investing in more robust, long-term solutions that may require more time and resources up front.
+The idea is that, just as financial debt incurs interest, technical debt incurs "interest" in the form of extra effort that must be expended in the future to maintain or enhance the software. This extra effort can come in the form of additional development work, increased testing, or higher maintenance costs.
+The goal is to minimize technical debt by designing and building software in a maintainable and scalable way, so that it can be easily updated and extended as business needs change. This is important because as the technical debt increases, it can become harder and more expensive to make changes to the software, which can slow down development and impact the business.
 
 ---
- 
-
+<br/><br/>
 
 ## 2. What is .net assembly and what are the main components of assembly And what are the types of assembly
 ### *Answer*
 
-    .NET assembly is a fundamental unit of deployment, versioning, and security in the .NET framework. It is a collection of one or more files that are used to build and run applications and libraries in the .NET environment.
+>.NET assembly is a fundamental unit of deployment, versioning, and security in the .NET framework. It is a collection of one or more files that are used to build and run applications and libraries in the .NET environment.
 
-    The main components of an assembly are:
+>The main components of an assembly are:
 
 * Metadata: This contains information about the assembly, such as the types, methods, and fields defined in the assembly, as well as information about the assembly's dependencies.
 
@@ -27,21 +37,22 @@
 
 * Assembly manifest: This contains information about the assembly, including its version number, culture, and strong name. It also describes the assembly's dependencies on other assemblies and the permissions required to run the assembly.
 
-    Assemblies can be either a single file or a multi-file assembly, which contains more than one file. A single file assembly contains both the assembly manifest and the MSIL code in a single file with the extension .dll or .exe. A multi-file assembly contains the assembly manifest in a separate file with the extension .manifest, and the MSIL code in one or more files with the extension .dll or .exe.
+> Assemblies can be either a single file or a multi-file assembly, which contains more than one file. A single file assembly contains both the assembly manifest and the MSIL code in a single file with the extension .dll or .exe. A multi-file assembly contains the assembly manifest in a separate file with the extension .manifest, and the MSIL code in one or more files with the extension .dll or .exe.
 
-In the .NET framework, there are two types of assemblies: private assemblies and shared assemblies.
+> In the .NET framework, there are two types of assemblies: private assemblies and shared assemblies.
 
 * Private assemblies: These are assemblies that are intended to be used by a single application, and they are typically located in the application's local folder. They are not intended to be shared by multiple applications.
 
 * Shared assemblies: These are assemblies that are intended to be used by multiple applications. They are typically installed in the global assembly cache (GAC), which is a special folder where shared assemblies are stored. They are also typically given a strong name, which is a unique name that includes a public key and a digital signature. This allows for versioning and ensures that different versions of the same assembly can coexist on the same system.
 
-Additionally, there are also satellite assemblies, which are assemblies that contain resources for a specific language or culture. They are used to provide localized resources for an application, such as translated strings or images. Satellite assemblies are typically deployed in the same directory as the main assembly, and they have a specific naming convention, such as "MyAssembly.resources.dll"
+> Additionally, there are also satellite assemblies, which are assemblies that contain resources for a specific language or culture. They are used to provide localized resources for an application, such as translated strings or images. Satellite assemblies are typically deployed in the same directory as the main assembly, and they have a specific naming convention, such as "MyAssembly.resources.dll"
 
 ---
+<br/><br/>
 
-
-
-# Can you explain the difference between the managed and unmanaged code in the .NET framework?
+# 3. Can you explain the difference between the managed and unmanaged code in the .NET framework?
+## Answer
+> Managed code is code that runs within the CLR and is managed by the CLR's memory manager, while unmanaged code is code that runs outside of the CLR and is not managed by the CLR's memory manager. Examples of unmanaged code in the .NET framework include C/C++ code that is called via P/Invoke.
 
 What is the purpose of the Common Language Runtime (CLR) in the .NET framework?
 How do you handle exceptions in C# and what is the difference between a try-catch block and a try-finally block?
@@ -53,7 +64,7 @@ Can you explain the difference between a delegate and an event in C#?
 How do you implement threading in C# and what is the difference between the Thread and Task classes?
 Can you explain the difference between a WebForm and an MVC application in the .NET framework?
 
-Managed code is code that runs within the CLR and is managed by the CLR's memory manager, while unmanaged code is code that runs outside of the CLR and is not managed by the CLR's memory manager. Examples of unmanaged code in the .NET framework include C/C++ code that is called via P/Invoke.
+
 
 The CLR is the runtime environment of the .NET framework and is responsible for executing code, managing memory, handling exceptions, and providing security.
 
