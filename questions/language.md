@@ -151,3 +151,57 @@ int j = (int)o;  // Explicit unboxing
 | **L1**    | 0           |
 | **L2**    | 0           |
 | **L3**    | 0           |
+
+
+## 12. Can you explain the difference between an abstract class and a sealed class in C#?
+### Answer
+> An abstract class is a class that cannot be instantiated and is typically used as a base class for other classes, while a sealed class is a class that cannot be inherited.
+
+| **Level** | **Expectaions, Grade** |
+|-----------|-------------|
+| **L1**    | 0           |
+| **L2**    | 0           |
+| **L3**    | 0           |
+---
+
+## 12. What is dependency injection in and what are the benefits of using it? How to implement it?
+### Answer
+
+| **Level** | **Expectaions, Grade** |
+|-----------|-------------|
+| **L1**    | 0           |
+| **L2**    | 0           |
+| **L3**    | 0           |
+---
+
+## 12. Can you explain the difference between an array and a list in C#?
+### Answer
+
+| **Level** | **Expectaions, Grade** |
+|-----------|-------------|
+| **L1**    | 0           |
+| **L2**    | 0           |
+| **L3**    | 0           |
+---
+
+## 12. Can you explain the difference between a hash table and a dictionary in C#?
+### Answer
+
+| **Level** | **Expectaions, Grade** |
+|-----------|-------------|
+| **L1**    | 0           |
+| **L2**    | 0           |
+| **L3**    | 0           |
+---
+
+## 12. Can you explain the difference between a constructor and a static constructor in C#?
+### Answer
+
+| **Level** | **Expectaions, Grade** |
+|-----------|-------------|
+| **L1**    | 0           |
+| **L2**    | 0           |
+| **L3**    | 0           |
+---
+
+

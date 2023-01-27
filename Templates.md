@@ -4,10 +4,17 @@
 
 ## 1. Question
 ### Answer
+>
 
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
+---
+<br/><br/>
+
+
+# Description
+----****----  means same as one line above
