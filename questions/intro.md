@@ -13,36 +13,44 @@
 ---
 <br/><br/>
 
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
+---
+<br/><br/>
+
 ## 1. What is your role in your current project? 
 ### Answer
 
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
 <br/><br/>
 
 ## 3. Please tell if you are conducting code reviews in your project and if yes how they are organized?  
 
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
 <br/><br/>
 
 ## 3. Let’s say you joined a new project. What would be your first steps you would do?   
 
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
 <br/><br/>

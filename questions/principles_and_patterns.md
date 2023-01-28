@@ -4,68 +4,124 @@
 ## 1. Are you familiar with any software engineering practices? (SOLID, DRY, KISS, CUPID etc.). Can you please describe them? 
 ### Answer
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 2. Can you please tell me an example where you used SOLID principles. What was the advantage of using it.
 ### Answer
+>1. Single Responsibility Principle
+>2. Open-Closed Principle
+>3. Liskov Substitution Principle
+>4. Interface Segregation Principle
+>5. Dependency Inversion Principle
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
-
+<br/><br/>
 ## 3. Are you familiar with design patterns?  
 ### Answer
+>Design patterns are reusable solutions to common software design problems. They provide a way to structure and organize code in a way that is easy to understand and maintain. Here is a list of some common design patterns, grouped by category:
 
+### Creational Patterns:
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+**Abstract Factory**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
+**Builder**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
+**Factory Method**: Defines an interface for creating an object, but lets subclasses decide which class to instantiate.
+**Prototype**: Creates new objects by copying existing objects, which serves as a prototype.
+**Singleton**: Ensures a class has only one instance, while providing a global access point to this instance.
+
+### Structural Patterns:
+
+**Adapter**: Allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
+**Bridge**: Decouples an abstraction from its implementation, allowing the two to vary independently.
+**Composite**: Compose objects into tree structures to represent part-whole hierarchies.
+**Decorator**: Attaches additional responsibilities to an object dynamically.
+**Facade**: Provides a simplified interface to a library, a framework, or any other complex set of classes.
+**Flyweight**: Uses sharing to support large numbers of fine-grained objects efficiently.
+**Proxy**: Provides a surrogate or placeholder for another object to control access to it.
+
+### Behavioral Patterns:
+
+**Chain of Responsibility**: Passes a request sequentially along a dynamic chain of handlers until one of them handles it.
+**Command**: Encapsulates a request as an object, thereby letting you parametrize clients with different requests, queue or log requests, and support undoable operations.
+Interpreter: Implements a specialized language by representing its grammar rules as a set of classes.
+**Iterator**: Sequentially access the elements of a collection without exposing its underlying representation.
+**Mediator**: Allows objects to communicate without knowing each other's identities.
+**Memento**: Captures an object's internal state to be able to restore it later.
+**Observer**: Allows a number of observer objects to be notified of changes to another object.
+**State**: Allows an object to alter its behavior when its internal state changes.
+**Strategy**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+**Template Method**: Defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior.
+**Visitor**: Separates an algorithm from an object structure by moving the hierarchy of methods into one object.
+
+>These are just some of the most common design patterns, there are many more out there. Each pattern serves a specific purpose and can be used in different situations to solve common software design problems. They are not meant to be applied blindly, but rather used as a tool to help guide the design of a software system.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 4. Which architectural patterns have you used in your projects? (MVC, MVVM, Layered Architecture, Clean Architecture)  
 ### Answer
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 5. What is Rest API.  
 ### Answer
+>REST (Representational State Transfer) is an architectural style for building web services. A REST API (Application Programming Interface) is a set of rules and conventions for building and interacting with web services that adhere to this architectural style.
 
+>A REST API defines a set of endpoints, or URL paths, that a client can interact with to retrieve and manipulate resources. These endpoints are typically defined according to the specific resource that they represent, and can include standard CRUD (Create, Read, Update, and Delete) operations.
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+>Each endpoint is typically associated with a specific HTTP verb such as GET, POST, PUT, PATCH, or DELETE. These verbs indicate the type of action that the endpoint should perform, and are used by the client to interact with the API.
+
+>For example, a GET request to the endpoint /users would typically retrieve a list of all users, while a GET request to the endpoint /users/1 would retrieve the user with an ID of 1. A POST request to the endpoint /users would typically create a new user, while a PUT request to the endpoint /users/1 would update the user with an ID of 1.
+
+>REST APIs often return data in the form of JSON or XML, and can be consumed by various clients including web browsers, mobile apps, and servers.
+
+>Benefits of REST API
+
+>RESTful web services are lightweight, highly scalable and maintainable, and are very simple to develop
+They are easy to consume, and are often the preferred choice for building web, mobile, and IoT applications.
+They are also easy to test, and can be easily integrated with other systems and services.
+
+>In summary, a REST API is a set of rules and conventions for building web services that adhere to the REST architectural style. It defines a set of endpoints that a client can interact with to retrieve and manipulate resources, and is typically associated with standard CRUD operations and HTTP verbs.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 5. Are you familiar with CQRS pattern  
 ### Answer
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 6. What is validation. Where and why it is used? 
 ### Answer
@@ -93,13 +149,13 @@ Regex: Regular expressions are a powerful tool for validating input data. .NET p
 
 These are just a few examples of the tools and techniques available for validation in .NET, depending on the specific needs of the application, developers can choose the best tool that fits the requirement.
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 7. What is caching. Have you used it? What tools you have used? 
 ### Answer
@@ -116,14 +172,13 @@ Microsoft's in-memory caching framework, ASP.NET Core Memory Cache: This is a bu
 
 >>StackExchange.Redis : it is a high-performance general-purpose redis client for .NET languages.
 
-
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 8. Describe please step by step the process of sending a request to server and getting a response 
 ### Answer
@@ -172,25 +227,33 @@ The request and response can contain many more headers, like cookies, auth token
 The server can forward the request to another server, this process can happen multiple times before the final response is sent to the client.
 Also, ASP.NET Core is the latest version of ASP.NET, which is a redesign of the original ASP.NET and it has some differences in the way it handles requests and creates responses compared to the older versions of ASP.NET
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
+
+## 8. What is Liskov substitution principle?
+### Answer
+
+>The Liskov Substitution Principle (LSP) is a principle in object-oriented programming that states that objects of a superclass should be able to be replaced with objects of a subclass without affecting the correctness of the program. In simpler terms, it means that if a program is written to work with a certain type of object, it should be able to work with any subtype of that object without any modification.
+
+>For example, if you have a Vehicle class, and you create a Car class that inherits from the Vehicle class, the Liskov Substitution Principle states that any code that is written to work with a Vehicle object should be able to work with a Car object without any modification, because a Car is a type of Vehicle.
+
+>The Liskov Substitution Principle is related to the concept of polymorphism, which allows objects of different classes to be used interchangeably, as long as they implement a common interface. To follow the LSP, the derived classes should be substitutable for their base classes, and it should be able to use any derived class in place of its base class without altering the desirable properties of the program.
+
+>The LSP is important to make sure that the code is easy to understand, maintain, and extend. It helps to reduce the number of dependencies between different parts of the code, making the code more robust and less prone to errors.
+
+>It's important to note that the LSP is not a hard rule and it's not always easy or practical to follow it strictly. Sometimes, it's necessary to break the LSP in order to achieve other goals, such as performance or security. But it should be done with care, and always in a way that's easy to understand, maintain, and extend.
 
 
-
-
-
-Question
-Liskov
-The Liskov Substitution Principle (LSP) is a principle in object-oriented programming that states that objects of a superclass should be able to be replaced with objects of a subclass without affecting the correctness of the program. In simpler terms, it means that if a program is written to work with a certain type of object, it should be able to work with any subtype of that object without any modification.
-
-For example, if you have a Vehicle class, and you create a Car class that inherits from the Vehicle class, the Liskov Substitution Principle states that any code that is written to work with a Vehicle object should be able to work with a Car object without any modification, because a Car is a type of Vehicle.
-
-The Liskov Substitution Principle is related to the concept of polymorphism, which allows objects of different classes to be used interchangeably, as long as they implement a common interface. To follow the LSP, the derived classes should be substitutable for their base classes, and it should be able to use any derived class in place of its base class without altering the desirable properties of the program.
-
-The LSP is important to make sure that the code is easy to understand, maintain, and extend. It helps to reduce the number of dependencies between different parts of the code, making the code more robust and less prone to errors.
-
-It's important to note that the LSP is not a hard rule and it's not always easy or practical to follow it strictly. Sometimes, it's necessary to break the LSP in order to achieve other goals, such as performance or security. But it should be done with care, and always in a way that's easy to understand, maintain, and extend.
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
+---
+<br/><br/>

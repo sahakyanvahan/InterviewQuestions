@@ -16,13 +16,13 @@ Performance: RDBs are generally better suited for complex queries and transactio
 
 >6. Handling Large Volume of Data: RDBs can handle large volume of data but it requires a lot of effort to scale them horizontally. NoSQL databases are designed to handle large volume of data with minimal overhead. 
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ----****----                |                 |
 ---
+<br/><br/>
 
 ## 1. What is CAP theorem
 ### Answer
@@ -35,12 +35,13 @@ Performance: RDBs are generally better suited for complex queries and transactio
 It's important to note that the CAP theorem is a theoretical concept, and that in practice, a distributed system might be able to achieve a good trade-off between the three guarantees depending on the use case and the specific implementation. 
 The CAP theorem is often used to help guide the design and implementation of distributed systems, and can be a useful tool for understanding the trade-offs that must be made when building a distributed system. 
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ----****----                |                 |
 ---
+<br/><br/>
 
 
 ## 1. What are indexes. Describe types of indexes. Clustered unclustered 
@@ -54,13 +55,13 @@ There are two main types of indexes in RDBMS:
 >An index allows the database to find and retrieve specific rows much faster than scanning every row in a table. 
 Indexes can be created on one or multiple columns of a table and can be created as unique or non-unique. In addition, indexes can be created on computed columns and can be filtered to include only certain rows. 
  
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ----****----                |                 |
 ---
-
+<br/><br/>
 
 ## 1. What is stored procedure 
 ### Answer
@@ -79,13 +80,58 @@ Indexes can be created on one or multiple columns of a table and can be created 
 4. Difficult to debug: Stored procedures can be difficult to debug, especially when they are complex or have been written by someone else. 
 5. Limited scalability: Stored procedures can be less scalable than other data access methods, especially when they are used to perform complex queries or operations. 
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ----****----                |                 |
 ---
+<br/><br/>
 
-
-## 1. What is join 
+## 1. What is join operation?
 ### Answer
+>In SQL, a join is a way to combine data from two or more tables in a relational database based on a related column between them. The related column is often called the join key or join condition. The join operation creates a new table that combines the rows from the tables that participate in the join. The resulting table contains all the columns from both tables, but only the rows that match the join condition.
+
+>There are several types of joins in SQL:
+
+>`INNER JOIN`: This is the most common type of join. It returns only the rows that have matching values in both tables.
+
+```SQL
+SELECT *
+FROM orders
+JOIN customers
+ON orders.customer_id = customers.customer_id;
+```
+>LEFT JOIN (or LEFT OUTER JOIN): This type of join returns all the rows from the left table (the first table in the join clause), and the matching rows from the right table. If there is no match, the result will contain NULL values in the columns of the right table.
+
+```SQL
+SELECT *
+FROM orders
+LEFT JOIN customers
+ON orders.customer_id = customers.customer_id;
+```
+>RIGHT JOIN (or RIGHT OUTER JOIN): This type of join is similar to the LEFT JOIN, but it returns all the rows from the right table and the matching rows from the left table.
+
+```SQL
+SELECT *
+FROM orders
+RIGHT JOIN customers
+ON orders.customer_id = customers.customer_id;
+```
+>FULL JOIN (or FULL OUTER JOIN): This type of join returns all the rows from both tables, and the matching rows. If there is no match, the result will contain NULL values in the columns of the non-matching table.
+
+```SQL
+SELECT *
+FROM orders
+FULL JOIN customers
+ON orders.customer_id = customers.customer_id;
+```
+>In summary, joins allow you to combine data from multiple tables in a relational database based on a related column, and return the result in a single table. Different types of joins return different sets of data, depending on whether there is a match or not.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ----****----                |                 |
+---
+<br/><br/>

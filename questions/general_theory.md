@@ -20,13 +20,13 @@
 
 >OOP is widely used in modern programming languages like Java, C#, Python, and many more. It's important to note that OOP is just one of the many programming paradigms and it's not the only way to solve a problem, other paradigms like functional programming and procedural programming also can be used to solve problems.
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 2. What is polymorphism
 ### Answer
@@ -41,12 +41,13 @@
 
 >An example of polymorphism is a shape class hierarchy where a Shape class has a Draw() method, and derived classes like Circle, Square, and Triangle have their own implementation of the Draw() method, and using polymorphism, you can call the draw method on a Shape reference that could be a Circle, Square or Triangle without knowing the specific type of the object at runtime.
 
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 3. What is encapsulaltion
 ### Answer
@@ -63,13 +64,13 @@ It promotes the use of a clear and consistent interface for interacting with the
 It allows the developer to implement security mechanisms, such as access control, to prevent unauthorized access to the object's internal state and behavior.
 It is important to note that encapsulation is not about hiding information, it is about controlling the access to the information and keeping the object's internal state and behavior consistent and predictable.
 
-
-| **Level** | **Expectaions** |
-|-----------|-------------|
-| **L1**    | bad         |
-| **L2**    | Ok          |
-| **L3**    | Good        |
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
+<br/><br/>
 
 ## 4. What is inheritance
 ### Answer
@@ -84,6 +85,14 @@ It is important to note that encapsulation is not about hiding information, it i
 
 >Inheritance is one of the fundamental concepts of OOP, and it is supported by most modern programming languages, including Java, C#, Python, and many more. It's important to note that Inheritance is just one way of achieving code reuse, other ways of code reuse are composition and interfaces.
 
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
+---
+<br/><br/>
+
 
 ## 1. What is technical debt
 ### *Answer*
@@ -92,5 +101,10 @@ It is important to note that encapsulation is not about hiding information, it i
 The idea is that, just as financial debt incurs interest, technical debt incurs "interest" in the form of extra effort that must be expended in the future to maintain or enhance the software. This extra effort can come in the form of additional development work, increased testing, or higher maintenance costs.
 The goal is to minimize technical debt by designing and building software in a maintainable and scalable way, so that it can be easily updated and extended as business needs change. This is important because as the technical debt increases, it can become harder and more expensive to make changes to the software, which can slow down development and impact the business.
 
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Stron in Depth Knowledge    |                 |
 ---
 <br/><br/>
