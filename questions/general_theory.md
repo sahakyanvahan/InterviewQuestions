@@ -1,4 +1,4 @@
-<h1 align="center"> General Theory</h1>
+<h1 align="center"> General Programming Theory</h1>
 
 <br/><br/>
 
