@@ -1,4 +1,4 @@
-<h1 align="center"> Intriduction Talk</h1>
+<h1 align="center"> Introduction Talk</h1>
 
 <br/><br/>
 
@@ -10,9 +10,9 @@
 
 >Pleased to meet you Krszysztof. My name is Vahan and today I am responsible for conducting a technical interview with you. 
 
->How are you? 
+>How are you? Are you feeling fine?
 
->Let me introduce myself a little bit. I am a .NET developer with around 8 years of experience. Also I have some experience working with Python. I joined EPAM in 2022. Add something about EPAM. 
+>Let me introduce myself a little bit. I am a .NET developer with around 8 years of experience. Also I have some experience working with Python. Worked in a bunch of projects from various domains like Real Estate, Resource Management, Oil and Gas Industry etc. I joined EPAM in 2022. 
 
 >And how about you? Would you tell a couple of words about yourself? 
 

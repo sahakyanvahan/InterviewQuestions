@@ -3,13 +3,12 @@
 <br/><br/>
 
 ## 1. Please write some service that has method for getting a list of employees from some external source.
-## Make it asyncronous
-## Use dependency injection
-## Add unit tests
+### Make it asyncronous
+### Use dependency injection
+### Add unit tests
 ### Answer
-> The code block
 
-* **From external api**
+* **Read from external api using `HttpClient`**
 ``` C#
 using System.Collections.Generic;
 using System.Net.Http;
@@ -33,7 +32,7 @@ public class EmployeeService
 }
 ```
 
-* **From Database**
+* **Reads from Database using `Entity Framework`**
 ```C#
 using System.Collections.Generic;
 using System.Linq;
@@ -151,13 +150,13 @@ public class EmployeeServiceTests
 <br/><br/>
 
 ## 2. Imagine you have an application for managing employees in your organization. Please write a controller method for creating a new employee. It should include validation. 
-## Make it asyncronous
-## Use dependency injection
-## Add unit tests
-## Asume you are using CQRS pattern
+### Make it asyncronous
+### Use dependency injection
+### Add unit tests
+### Assume you are using CQRS pattern
 
 ### Answer
-* **The code block with controller and `Data Annotation` based validation**
+* **The code block with controller and Data Annotation based validation**
 
 ``` C#
 using System.Threading.Tasks;
@@ -200,11 +199,11 @@ public class CreateEmployeeCommand : ICommand
 
 public class CreateEmployeeCommandHandler : ICommandHandler<CreateEmployeeCommand>
 {
-    private readonly EmployeeDbContext dbContext;
+    private readonly EmployeeDbContext _dbContext;
 
     public CreateEmployeeCommandHandler(EmployeeDbContext dbContext)
     {
-        this.dbContext = dbContext;
+        _dbContext = dbContext;
     }
 
     public async Task HandleAsync(CreateEmployeeCommand command)
@@ -218,32 +217,32 @@ public class CreateEmployeeCommandHandler : ICommandHandler<CreateEmployeeComman
             Email = command.Email
         };
 
-        dbContext.Employees.Add(employee);
+        _dbContext.Employees.Add(employee);
         await dbContext.SaveChangesAsync();
     }
 }
 ```
 
-> * **Same with `Fluent Validation`**
+> * **Same with `Fluent Validation` and `CommandDispatcher`**
 ```C#
 using FluentValidation;
 using Microsoft.AspNetCore.Mvc;
 
 public class EmployeeController : ControllerBase
 {
-    private readonly ICommandDispatcher commandDispatcher;
-    private readonly IValidator<CreateEmployeeCommand> validator;
+    private readonly ICommandDispatcher _commandDispatcher;
+    private readonly IValidator<CreateEmployeeCommand> _validator;
 
     public EmployeeController(ICommandDispatcher commandDispatcher, IValidator<CreateEmployeeCommand> validator)
     {
-        this.commandDispatcher = commandDispatcher;
-        this.validator = validator;
+        _commandDispatcher = commandDispatcher;
+        _validator = validator;
     }
 
     [HttpPost]
     public async Task<IActionResult> Create(CreateEmployeeCommand command)
     {
-        var validationResult = await validator.ValidateAsync(command);
+        var validationResult = await _validator.ValidateAsync(command);
 
         if (!validationResult.IsValid)
         {
@@ -255,10 +254,9 @@ public class EmployeeController : ControllerBase
             return BadRequest(ModelState);
         }
 
-        await commandDispatcher.DispatchAsync(command);
+        await _commandDispatcher.DispatchAsync(command);
         return CreatedAtAction(nameof(Get), new { id = command.Id }, command);
     }
-    //other methods
 }
 
 using FluentValidation;
