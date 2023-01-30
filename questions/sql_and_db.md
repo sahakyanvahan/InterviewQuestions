@@ -135,17 +135,62 @@ ON orders.customer_id = customers.customer_id;
 ### Answer
 >There are several types of NoSQL databases, including:
 
-* Document databases, which store data in semi-structured format, such as JSON or BSON. Examples include **MongoDB** and **Couchbase**.
-* Key-value databases, which store data as a collection of key-value pairs. Examples include **Redis** and **Riak**.
-* Column-family databases, which store data in a column-based format, rather than a row-based format. Examples include **Apache Cassandra** and **Hbase**.
-* Graph databases, which store data in a graph format, with nodes and edges representing data entities and relationships. Examples include **Neo4j** and **TigerGraph**.
-* Object-oriented databases, which store data in an object-oriented format, with each object having its own unique identity and behavior. Examples include **ZODB** and **ObjectDB**.
+* **Document databases**, which store data in semi-structured format, such as JSON or BSON. Examples include **MongoDB** and **Couchbase**.
+* **Key-value databases**, which store data as a collection of key-value pairs. Examples include **Redis** and **Riak**.
+* **Column-family databases**, which store data in a column-based format, rather than a row-based format. Examples include **Apache Cassandra** and **Hbase**.
+* **Graph databases**, which store data in a graph format, with nodes and edges representing data entities and relationships. Examples include **Neo4j** and **TigerGraph**.
+* O**bject-oriented databases**, which store data in an object-oriented format, with each object having its own unique identity and behavior. Examples include **ZODB** and **ObjectDB**.
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | Not familiar                |                 |
 | **L2**    | Probably know couple of them |                 |
 | **L3**    | Can mention main types. Have some experience with working with them |                 |
+---
+<br/><br/>
+
+## 6. How to use MongoDB in C#
+### Answer
+>Install the MongoDB.Driver for C#: You can install the MongoDB driver for C# using NuGet Package Manager.
+```C#
+using MongoDB.Driver;
+
+// Connect to the database
+var client = new MongoClient("mongodb://localhost:27017");
+var database = client.GetDatabase("test");
+
+// Define the model
+public class Book
+{
+    public ObjectId Id { get; set; }
+    public string Title { get; set; }
+    public string Author { get; set; }
+}
+
+// Perform CRUD operations
+var collection = database.GetCollection<Book>("books");
+
+// Insert a document
+var book = new Book { Title = "MongoDB Basics", Author = "John Doe" };
+await collection.InsertOneAsync(book);
+
+// Find a document
+var filter = Builders<Book>.Filter.Eq("Author", "John Doe");
+var result = await collection.Find(filter).ToListAsync();
+
+// Update a document
+var update = Builders<Book>.Update.Set("Title", "MongoDB Advanced");
+await collection.UpdateOneAsync(filter, update);
+
+// Delete a document
+await collection.DeleteOneAsync(filter);
+```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Don't know                  |                 |
+| **L2**    | Probably know a bit         |                 |
+| **L3**    | Full answer                 |                 |
 ---
 <br/><br/>
 
