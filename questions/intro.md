@@ -13,6 +13,8 @@
 <br/><br/>
 
 ## 2. What is your role in your current project? 
+## What plans you have for future in this project
+## What tools or technologies would you like to use in future
 ### Answer
 > Free answer
 
@@ -24,7 +26,7 @@
 ---
 <br/><br/>
 
-## 3. Please tell if you are conducting code reviews in your project and if yes how they are organized?  
+## 3. Please tell if you are conducting code reviews in your project and if yes how they are organized? How ideal pull request should look like according to you?
 ### Answer
 >Yes. We are conductin code reviews. And then desctibes how it's done
 

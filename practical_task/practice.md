@@ -2,6 +2,8 @@
 
 <br/><br/>
 
+# Note. *Practical task should take no more than 10 minutes. 20 minutes should be considered as red flag.*
+
 ## 1. Please write some service that has method for getting a list of employees from some external source.
 ### Make it asyncronous
 ### Use dependency injection

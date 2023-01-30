@@ -112,12 +112,12 @@
 ### *Answer*
 >The software development life cycle (SDLC) is a process used by software engineers to plan, design, develop, test, and maintain software. The SDLC typically includes the following stages:
 
-* Requirements gathering and analysis: This stage involves identifying the needs and goals of the software and determining the requirements that the software must meet.
-* Design: This stage involves creating a plan for how the software will be built and outlining the overall architecture of the system.
-* Implementation or coding: This stage involves writing the code for the software and bringing the design to life.
-* Testing: This stage involves verifying that the software works correctly and meets the requirements defined in the previous stages.
-* Deployment: This stage involves installing the software on the target system or making it available for use by end-users.
-* Maintenance: This stage involves monitoring the software after it is deployed and making any necessary updates or improvements.
+* **Requirements gathering and analysis**: This stage involves identifying the needs and goals of the software and determining the requirements that the software must meet.
+* **Design**: This stage involves creating a plan for how the software will be built and outlining the overall architecture of the system.
+* **Implementation or coding**: This stage involves writing the code for the software and bringing the design to life.
+* **Testing**: This stage involves verifying that the software works correctly and meets the requirements defined in the previous stages.
+* **Deployment**: This stage involves installing the software on the target system or making it available for use by end-users.
+* **Maintenance**: This stage involves monitoring the software after it is deployed and making any necessary updates or improvements.
 
 >Different methodologies like Waterfall, Agile, Scrum, V-model etc are used to follow the above stages but it's not necessary that every SDLC model follows all the stages, it may vary as per organization and project requirement.
 
@@ -133,13 +133,13 @@
 ### *Answer*
 >Code metrics are measurements used to evaluate the quality and maintainability of software. Some common code metrics include:
 
-* Lines of code (LOC): This metric measures the total number of lines of code in a software program.
-* Cyclomatic complexity: This metric measures the number of linearly independent paths through a program's source code. It is used to identify complex and hard-to-maintain code.
-* Maintainability index: This metric is calculated based on several other metrics, such as LOC, cyclomatic complexity, and number of comments, and is used to evaluate the overall maintainability of a software program.
-* Comment density: This metric measures the number of comments in a software program relative to the number of lines of code.
-* Code coverage: This metric measures the proportion of a program's code that is executed during testing.
-* Bug density: This metric measures the number of bugs found per unit of code.
-* Code duplication: This metric measures the amount of duplicate code in a software program.
+* **Lines of code (LOC)**: This metric measures the total number of lines of code in a software program.
+* **Cyclomatic complexity**: This metric measures the number of linearly independent paths through a program's source code. It is used to identify complex and hard-to-maintain code.
+* **Maintainability index**: This metric is calculated based on several other metrics, such as LOC, cyclomatic complexity, and number of comments, and is used to evaluate the overall maintainability of a software program.
+* **Comment density**: This metric measures the number of comments in a software program relative to the number of lines of code.
+* **Code coverage**: This metric measures the proportion of a program's code that is executed during testing.
+* **Bug density**: This metric measures the number of bugs found per unit of code.
+* **Code duplication**: This metric measures the amount of duplicate code in a software program.
 
 > These metrics can provide valuable insight into the quality and maintainability of a software program and can help software engineers identify areas of the code that may need improvement.
 
