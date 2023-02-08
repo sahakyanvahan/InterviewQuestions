@@ -47,37 +47,56 @@
 ### Answer
 >Design patterns are reusable solutions to common software design problems. They provide a way to structure and organize code in a way that is easy to understand and maintain. Here is a list of some common design patterns, grouped by category:
 
-### Creational Patterns:
+### **Creational Patterns:**
 
-**Abstract Factory**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
-**Builder**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
-**Factory Method**: Defines an interface for creating an object, but lets subclasses decide which class to instantiate.
-**Prototype**: Creates new objects by copying existing objects, which serves as a prototype.
-**Singleton**: Ensures a class has only one instance, while providing a global access point to this instance.
+>**Abstract Factory**: Provides an interface for creating families of related or dependent objects without specifying their concrete classes.
 
-### Structural Patterns:
+>**Builder**: Separates the construction of a complex object from its representation, allowing the same construction process to create different representations.
 
-**Adapter**: Allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
-**Bridge**: Decouples an abstraction from its implementation, allowing the two to vary independently.
-**Composite**: Compose objects into tree structures to represent part-whole hierarchies.
-**Decorator**: Attaches additional responsibilities to an object dynamically.
-**Facade**: Provides a simplified interface to a library, a framework, or any other complex set of classes.
-**Flyweight**: Uses sharing to support large numbers of fine-grained objects efficiently.
-**Proxy**: Provides a surrogate or placeholder for another object to control access to it.
+>**Factory Method**: Defines an interface for creating an object, but lets subclasses decide which class to instantiate.
 
-### Behavioral Patterns:
+>**Prototype**: Creates new objects by copying existing objects, which serves as a prototype.
 
-**Chain of Responsibility**: Passes a request sequentially along a dynamic chain of handlers until one of them handles it.
-**Command**: Encapsulates a request as an object, thereby letting you parametrize clients with different requests, queue or log requests, and support undoable operations.
+>**Singleton**: Ensures a class has only one instance, while providing a global access point to this instance.
+
+### **Structural Patterns:**
+
+>**Adapter**: Allows classes with incompatible interfaces to work together by wrapping its own interface around that of an already existing class.
+
+>**Bridge**: Decouples an abstraction from its implementation, allowing the two to vary independently.
+
+>**Composite**: Compose objects into tree structures to represent part-whole hierarchies.
+
+>**Decorator**: Attaches additional responsibilities to an object dynamically.
+
+>**Facade**: Provides a simplified interface to a library, a framework, or any other complex set of classes.
+
+>**Flyweight**: Uses sharing to support large numbers of fine-grained objects efficiently.
+
+>**Proxy**: Provides a surrogate or placeholder for another object to control access to it.
+
+### **Behavioral Patterns:**
+
+>**Chain of Responsibility**: Passes a request sequentially along a dynamic chain of handlers until one of them handles it.
+
+>**Command**: Encapsulates a request as an object, thereby letting you parametrize clients with different requests, queue or log requests, and support undoable operations.
 Interpreter: Implements a specialized language by representing its grammar rules as a set of classes.
-**Iterator**: Sequentially access the elements of a collection without exposing its underlying representation.
-**Mediator**: Allows objects to communicate without knowing each other's identities.
-**Memento**: Captures an object's internal state to be able to restore it later.
-**Observer**: Allows a number of observer objects to be notified of changes to another object.
-**State**: Allows an object to alter its behavior when its internal state changes.
-**Strategy**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
-**Template Method**: Defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior.
-**Visitor**: Separates an algorithm from an object structure by moving the hierarchy of methods into one object.
+
+>**Iterator**: Sequentially access the elements of a collection without exposing its underlying representation.
+
+>**Mediator**: Allows objects to communicate without knowing each other's identities.
+
+>**Memento**: Captures an object's internal state to be able to restore it later.
+
+>**Observer**: Allows a number of observer objects to be notified of changes to another object.
+
+>**State**: Allows an object to alter its behavior when its internal state changes.
+
+>**Strategy**: Defines a family of algorithms, encapsulates each one, and makes them interchangeable.
+
+>**Template Method**: Defines the skeleton of an algorithm as an abstract class, allowing its subclasses to provide concrete behavior.
+
+>**Visitor**: Separates an algorithm from an object structure by moving the hierarchy of methods into one object.
 
 >These are just some of the most common design patterns, there are many more out there. Each pattern serves a specific purpose and can be used in different situations to solve common software design problems. They are not meant to be applied blindly, but rather used as a tool to help guide the design of a software system.
 
