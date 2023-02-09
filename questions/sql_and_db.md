@@ -24,7 +24,7 @@ Performance: RDBs are generally better suited for complex queries and transactio
 ---
 <br/><br/>
 
-## 1. What’s the difference between MSSQL and SQL lite 
+## 2. What’s the difference between MSSQL and SQL lite 
 ### Answer
 >SQL Server (MSSQL) and SQLite are both relational database management systems, but they have some key differences
 
@@ -42,7 +42,7 @@ Performance: RDBs are generally better suited for complex queries and transactio
 ---
 <br/><br/>
 
-## 2. What is CAP theorem
+## 3. What is CAP theorem
 ### Answer
 > The CAP theorem, also known as Brewer's theorem, states that it is impossible for a distributed system to simultaneously provide all three of the following guarantees: 
 >>1. Consistency: all nodes in the system see the same data at the same time.
@@ -61,7 +61,7 @@ The CAP theorem is often used to help guide the design and implementation of dis
 ---
 <br/><br/>
 
-## 3. What are indexes. Describe types of indexes. Clustered unclustered 
+## 4. What are indexes. Describe types of indexes. Clustered unclustered 
 ### Answer
 >Indexes are data structures that are used to improve the performance of queries in a relational database management system (RDBMS). They are used to quickly locate specific rows or sets of rows in a table based on the values in one or more columns. 
 
@@ -80,7 +80,7 @@ Indexes can be created on one or multiple columns of a table and can be created 
 ---
 <br/><br/>
 
-## 4. What is stored procedure 
+## 5. What is stored procedure 
 ### Answer
 >Stored procedures are pre-compiled, reusable scripts or blocks of code that are stored in a database and can be called by applications or other stored procedures. They are used to perform specific tasks or operations in a database and are executed on the server side. Stored procedures are commonly used to perform actions such as data validation, data manipulation, and complex queries that involve multiple tables or operations. 
 >>Pros
@@ -105,7 +105,7 @@ Indexes can be created on one or multiple columns of a table and can be created 
 ---
 <br/><br/>
 
-## 5. What is join operation?
+## 6. What is join operation?
 ### Answer
 >In SQL, a join is a way to combine data from two or more tables in a relational database based on a related column between them. The related column is often called the join key or join condition. The join operation creates a new table that combines the rows from the tables that participate in the join. The resulting table contains all the columns from both tables, but only the rows that match the join condition.
 
@@ -149,7 +149,7 @@ ON orders.customer_id = customers.customer_id;
 ---
 <br/><br/>
 
-## 6. Are you familiar with NoSQL databases? Can you mention some of them
+## 7. Are you familiar with NoSQL databases? Can you mention some of them
 ### Answer
 >There are several types of NoSQL databases, including:
 
@@ -167,7 +167,19 @@ ON orders.customer_id = customers.customer_id;
 ---
 <br/><br/>
 
-## 6. How to use MongoDB in C#
+## 8. What is transaction and how it works?
+### Answer
+>
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 9. How to use MongoDB in C#
 ### Answer
 >Install the MongoDB.Driver for C#: You can install the MongoDB driver for C# using NuGet Package Manager.
 ```C#
@@ -212,4 +224,37 @@ await collection.DeleteOneAsync(filter);
 ---
 <br/><br/>
 
-# TODO: A question about how to use Mongo DB in C#
+## 9. Are you familiar with DynamoDb. What are pros and cons of using it?
+### Answer
+>Amazon DynamoDB is a fully managed NoSQL database service provided by Amazon Web Services (AWS). It is a document-oriented database that is designed for scalability and high performance. <br\ >
+>DynamoDB is a key-value database, which means that data is stored as key-value pairs, where the key is a unique identifier for each item and the value is the data itself. The keys are used to quickly look up items in the database, and the values can be any data type, including complex data structures such as lists and maps.
+
+>Some of the key benefits of using DynamoDB include:
+
+> * **Scalability:** DynamoDB is designed to scale automatically and handle large amounts of data and traffic, making it a good choice for applications with unpredictable workloads.
+
+> * **High performance:** DynamoDB provides fast and predictable performance, with single-digit millisecond latencies for read and write operations.
+
+> * **Flexibility:** DynamoDB supports flexible data modeling, and allows you to store and retrieve any amount of data, at any time, without any prior knowledge of the data model.
+
+> * **Global reach:** DynamoDB is a fully managed service that is available globally, so you can use it to store and retrieve data from anywhere in the world.
+
+Some of the potential drawbacks of using DynamoDB include:
+
+> * **Cost:** DynamoDB can be more expensive than other NoSQL databases, especially for high-volume, high-write workloads.
+
+> * **Lack of control:** Because DynamoDB is a fully managed service, you have limited control over the underlying infrastructure, which can be a drawback for some users.
+
+> * **Complexity:** DynamoDB has a complex data model, which can make it difficult to learn and use, especially for users who are used to more traditional relational databases.
+
+Overall, DynamoDB is a good choice for applications that require high scalability, high performance, and flexible data modeling, and are willing to trade off some control and complexity for the benefits of a fully managed service.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Don't know                  |                 |
+| **L2**    | Probably know a bit         |                 |
+| **L3**    | Full answer                 |                 |
+---
+<br/><br/>
+
+# TODO: Add questions about other types of databases

@@ -161,3 +161,6 @@
 | **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Can mention a lot of metrics and tools|
 ---
 <br/><br/>
+
+# TODO: Add question about git
+# TODO: Maybe add question about terminals and bash

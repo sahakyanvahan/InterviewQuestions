@@ -11,7 +11,7 @@
 |-----------|-----------------------------|-----------------|
 | **L1**    | Basic Knowledge             |                 |
 | **L2**    | General Knowledge           |                 |
-| **L3**    | Stron in Depth Knowledge    |                 |
+| **L3**    | Strong in Depth Knowledge    |                 |
 ---
 <br/><br/>
 

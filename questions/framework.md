@@ -107,7 +107,7 @@
 ---
 <br/><br/>
 
-## 6. What is .net assembly and what are the main components of assembly And what are the types of assembly?
+## 6. What is .NET assembly and what are the main components of assembly And what are the types of assembly?
 ### *Answer*
 
 >.NET assembly is a fundamental unit of deployment, versioning, and security in the .NET framework. It is a collection of one or more files that are used to build and run applications and libraries in the .NET environment.
@@ -152,38 +152,7 @@
 ---
 <br/><br/>
 
-## 8. Please describe service lifetimes for dependency injection in ASP.NET Core  
-### Answer
->In ASP.NET Core, dependency injection (DI) is used to manage the lifetime of services, which are objects that are created to perform a specific task or set of tasks. There are several different service lifetimes that can be used in ASP.NET Core, including:
-
->**Transient**: A new instance of the service is created each time it is requested. This lifetime is appropriate for services that do not maintain state or have a very short lifespan.
-
->**Scoped**: A new instance of the service is created for each request, but the same instance is used for all requests within the same scope. This lifetime is appropriate for services that maintain state and need to be created and disposed of on a per-request basis.
-
->**Singleton**: A single instance of the service is created and shared by all requests. This lifetime is appropriate for services that are long-lived and do not maintain state.
-
->**Instance**: An instance of the service is provided explicitly and the DI container will not dispose it. This lifetime is appropriate for service that you want to manage the lifetime, for example, when you want to dispose them when you are done using them.
-
->You can set the lifetime of a service by using the appropriate method of the `IServiceCollection` interface when adding the service to the DI container. For example, to add a service with a transient lifetime, you would use the AddTransient method:
-```C#
-services.AddTransient<MyService>();
-```
-You can also set the lifetime of a service using attributes, for example `[Transient]` or `[Scoped]`
-```C#
-[Transient]
-public class MyService { }
-```
->In summary, the service lifetimes in ASP.NET Core determine how long a service is kept in memory, and how many instances of the service are created. There are 4 types of service lifetimes: `Transient`, `Scoped`, `Singleton`, and `Instance`. You can set the lifetime of a service by using the appropriate method of the IServiceCollection interface when adding the service to the DI container, or by using attributes.
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions Instance |
----
-<br/><br/>
-
-## 9. Please describe the difference between eager loading and lazy loading in EF core.  
+## 8. Please describe the difference between eager loading and lazy loading in EF core.  
 ### Answer
 >In Entity Framework Core (EF Core), eager loading and lazy loading are techniques used to load related data when querying a database.
 
@@ -214,7 +183,7 @@ var orders = customer.Orders;
 ---
 <br/><br/>
 
-## 10. What is LINQ  
+## 9. What is LINQ  
 ### Answer 
 >LINQ (Language Integrated Query) is a set of features in C# and Visual Basic that provides a consistent and expressive syntax for querying and manipulating data in various data sources, including in-memory data structures, databases, and XML documents.
 
@@ -240,9 +209,24 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
-## 11. What is the difference between First() and FirstOrDefault()? 
+## 10. Are you familiar with `AsNoTracking` extension method?
 ### Answer 
 >
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | General Desciptions         |                 |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 11. What is the difference between `First()` and `FirstOrDefault()`? 
+### Answer 
+>`First()` method will throw an `InvalidOperationException` if the sequence is empty. It is used when you expect the sequence to always contain an element and want to immediately raise an error if it doesn't.
+
+>`FirstOrDefault()` method will return a default value for the type of elements in the sequence if the sequence is empty. The default value for value types is 0 for numeric types and false for bool, and for reference types it is null. This method is used when the sequence might be empty and you want to handle this case gracefully, without raising an error.
+
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | General Desciptions         |                 |
@@ -271,7 +255,8 @@ var customers = from c in context.Customers
 
 ## 12. Are you familiar with code first migrations? Please describe them
 ### Answer
->Describes code first migrations
+>Code First Migrations is a feature in Entity Framework (EF) that allows you to manage changes to your database schema over time, as your application evolves. With Code First Migrations, you can define your database schema using C# classes, and then use EF to automatically generate and apply changes to the database as needed.
+
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | Don't know                  |                 |
@@ -282,11 +267,15 @@ var customers = from c in context.Customers
 
 ## 13. Are you familiar with FIRST principles of Unit testing?
 ### Answer
->Fast
-Isolated/Independent
-Repeatable
-Self-validating
-Thorough
+>The FIRST principles of unit testing are a set of guidelines that can help you write high-quality, effective unit tests. The acronym "FIRST" stands for:
+
+> * **Fast:** Unit tests should be fast and run quickly, allowing you to run them frequently as part of your development process.
+> * **Independent:** Unit tests should be isolated from each other, with no dependencies on the results of other tests. This ensures that tests can be run in any order, and that the failure of one test does not affect the outcome of other tests.
+> * **Repeatable:** Unit tests should produce the same results every time they are run, regardless of the environment or state of the system.
+> * **Self-Validating:** Unit tests should have clear and verifiable outcomes, making it easy to determine whether the test has passed or failed.
+> * **Timely:** Unit tests should be written and run in a timely manner, as close as possible to the development of the corresponding code. This helps to catch errors early in the development process, when they are easier and less expensive to fix.
+
+>By following the FIRST principles, you can write unit tests that are efficient, reliable, and effective in detecting errors in your code. This can help you to maintain a high-quality codebase, reduce the risk of bugs and regression, and improve your overall development process.
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
@@ -298,7 +287,20 @@ Thorough
 
 ## 14. Do you know what is testing pyramid?
 ### Answer
->Describes the pyramid
+>The testing pyramid is a visual representation of the different types of tests that should be used in software development and the relative proportion of each type. It is called a "pyramid" because the tests are arranged in layers, with more tests at the bottom (unit tests) and fewer tests at the top (end-to-end tests).
+
+>The testing pyramid consists of the following types of tests:
+
+> * **Unit Tests:** These are the most numerous tests, and they test individual components or functions in isolation. They are fast, automated, and reliable, and they are used to validate the basic functionality of the code.
+
+> * **Integration Tests:** These tests test the interactions between different components, to ensure that they work together as expected. They are still automated, but they take longer to run and are more complex than unit tests.
+
+> * **End-to-End Tests:** These tests test the entire system, from end-to-end, to ensure that everything works as expected. They are slower, more complex, and more brittle than the other types of tests, and they are used to validate the overall functionality of the system.
+
+>The goal of the testing pyramid is to provide a balance between the different types of tests, so that you can validate the functionality of the system with a minimum of tests, while still covering all the important aspects of the system. By following the testing pyramid, you can ensure that your tests are fast, reliable, and effective, and that you are not spending too much time on slow and complex tests that add little value.
+
+>It's worth noting that the testing pyramid is a guideline, not a strict rule, and there may be cases where you need to deviate from the pyramid, depending on the specific requirements of your project. However, in general, following the testing pyramid can help you to write effective and efficient tests for your software.
+
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | Don't know                  |                 |
@@ -335,30 +337,6 @@ Thorough
 |-----------|-----------------------------|-----------------|
 | **L1**    | No Answer                   |                 |
 | **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
----
-<br/><br/>
-
-## 17. What is middleware 
-### Answer
->In ASP.NET, middleware refers to software components that handle requests and responses between an application and the web server. These components can perform a variety of tasks such as authentication, routing, and caching. They are typically added to an application's pipeline using the built-in "Use" method, and they can be used to modify or extend the functionality of the application. Middleware components are often used to implement common functionality across multiple parts of an application, such as handling errors or logging data.
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Right Answer                |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
----
-<br/><br/>
-
-## 18. What are the lifecycles of the objects while working with Dependency Injection?
-### Answer
->
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Right Answer                |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 | **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>

@@ -31,7 +31,7 @@
 ---
 <br/><br/>
 
-## 2. Can you please tell me an example where you used SOLID principles. What was the advantage of using i?
+## 2. Can you please tell me an example where you used SOLID principles. What was the advantages of using them?
 ### Answer
 > Free answer
 
@@ -159,7 +159,7 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 5. Are you familiar with CQRS pattern  
+## 6. Are you familiar with CQRS pattern  
 ### Answer
 >CQRS (Command-Query Responsibility Segregation) is an architectural pattern that separates the responsibilities of reading and writing data in an application.
 
@@ -181,9 +181,20 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 6.What pattern is used in your project to communicate with the database?
+## 7.What pattern is used in your project to communicate with the database?
 ### Answer
->
+>There are several patterns that can be used to communicate with a database in software development. Some of the most commonly used patterns include:
+
+> * **Repository pattern:** This pattern abstracts the data access layer and allows you to define a uniform API for accessing data in your database. This helps to separate the data access logic from the business logic and makes it easier to test and maintain your code.
+
+> * **Unit of Work pattern:** This pattern helps to track changes to objects in memory and ensures that all changes are either committed or rolled back in a single transaction when communicating with a database. This can help to improve the reliability and performance of your database interactions.
+
+> * **Data Mapper pattern:** This pattern separates the object mapping from the database access logic, making it easier to manage changes to the database schema and objects used in the application.
+
+> * **Active Record pattern:** This pattern is an object-oriented approach to database access, where each object represents a database record and provides methods for manipulating the data. This can simplify database access and make it easier to work with database records in your application.
+
+>The choice of pattern will depend on the specific requirements of your application, and there may be other patterns that are better suited to your use case. It's also worth noting that many modern web frameworks provide built-in support for database communication, and you may not need to implement these patterns manually in your code.
+
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | Don't know                  |                 |

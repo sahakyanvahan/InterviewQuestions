@@ -539,3 +539,73 @@ ORDER BY b.Title ASC
 | **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
 ---
 <br/><br/>
+
+## 6. Write a SQL query to retrieve the top 10 most recently hired employees from the "Employees" table, ordered by hire date in descending order.
+### Answer
+
+```SQL
+SELECT TOP 10 *
+FROM Employees
+ORDER BY HireDate DESC
+```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Not neccesarily should write |                |
+| **L2**    | Should write                | Maybe minor problems   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
+---
+<br/><br/>
+
+## 7. Write a SQL query to retrieve all the products that have a price greater than the average price of all products.
+### Answer
+
+```SQL
+SELECT *
+FROM Products
+WHERE Price > (SELECT AVG(Price) FROM Products)
+```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Not neccesarily should write |                |
+| **L2**    | Should write                | Maybe minor problems   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
+---
+<br/><br/>
+
+## 8. Write a SQL query to retrieve the total number of orders and the total value of all orders for each customer in the "Orders" table.
+### Answer
+
+```SQL
+SELECT CustomerID,
+       COUNT(OrderID) AS TotalOrders,
+       SUM(Total) AS TotalValue
+FROM Orders
+GROUP BY CustomerID
+```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Not neccesarily should write |                |
+| **L2**    | Should write                | Maybe minor problems   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
+---
+<br/><br/>
+
+## 9. Write a SQL query to retrieve the names and hire dates of all employees who have been with the company for more than 5 years.
+### Answer
+
+```SQL
+SELECT Name, HireDate
+FROM Employees
+WHERE DATEDIFF(YEAR, HireDate, GETDATE()) > 5
+```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Not neccesarily should write |                |
+| **L2**    | Should write                | Maybe minor problems   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
+---
+<br/><br/>
