@@ -240,7 +240,18 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
-## 11. What is the difference between IQueryable and IEnumerable 
+## 11. What is the difference between First() and FirstOrDefault()? 
+### Answer 
+>
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | General Desciptions         |                 |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 12. What is the difference between IQueryable and IEnumerable 
 ### Answer
 >IQueryable and IEnumerable are both interfaces in C# that define methods for working with collections of data. The main difference between the two is that IQueryable allows for the creation of LINQ queries that can be executed against a database, while IEnumerable is used for in-memory collections and the queries are executed locally.
 
@@ -250,6 +261,32 @@ var customers = from c in context.Customers
 
 >In short, IEnumerable is for in-memory collection and IQueryable is for database querying.
 
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Don't know                  |                 |
+| **L2**    | General Desciptions         |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 12. Are you familiar with code first migrations? Please describe them
+### Answer
+>Describes code first migrations
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Don't know                  |                 |
+| **L2**    | General Desciptions         |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 13. Are you familiar with FIRST principles of Unit testing?
+### Answer
+>Fast
+Isolated/Independent
+Repeatable
+Self-validating
+Thorough
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
@@ -259,7 +296,18 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
-## 12. What is the difference between NUnit and XUnit 
+## 14. Do you know what is testing pyramid?
+### Answer
+>Describes the pyramid
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Don't know                  |                 |
+| **L2**    | General Desciptions         |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 15. What is the difference between NUnit and XUnit 
 ### Answer
 >One of the main differences is the syntax for writing tests. NUnit uses a more traditional, attribute-based syntax for marking test methods, while xUnit uses a more fluent, method-based syntax. For example, in NUnit, a test method is marked with the [Test] attribute, while in xUnit, it is marked with the [Fact] attribute.
 
@@ -279,7 +327,7 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
-## 13. How to test private methods 
+## 16. How to test private methods 
 ### Answer
 > There is no way to test private methods. They are implementation details 
 
@@ -291,9 +339,21 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
-## 14. What is middleware 
+## 17. What is middleware 
 ### Answer
 >In ASP.NET, middleware refers to software components that handle requests and responses between an application and the web server. These components can perform a variety of tasks such as authentication, routing, and caching. They are typically added to an application's pipeline using the built-in "Use" method, and they can be used to modify or extend the functionality of the application. Middleware components are often used to implement common functionality across multiple parts of an application, such as handling errors or logging data.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Right Answer                |                 |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 18. What are the lifecycles of the objects while working with Dependency Injection?
+### Answer
+>
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|

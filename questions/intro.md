@@ -49,3 +49,15 @@
 | **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
+
+## 5. Imagine, there is a new developer in project. How to introduce him to the project?  
+### Answer
+>Describes steps.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Gives reasonable answer     |                 |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>

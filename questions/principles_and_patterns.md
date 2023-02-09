@@ -181,7 +181,79 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 6. What is validation. Where and why it is used? 
+## 6.What pattern is used in your project to communicate with the database?
+### Answer
+>
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Don't know                  |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
+
+## 7.What are the core advantages of using microservices architecture
+### Answer
+> * **Scalability**: Microservices allow for individual services to be scaled independently, allowing for greater flexibility in managing the load and performance of the system.
+> * **Resilience**: By breaking down the system into smaller, independent services, the impact of a failure in one service is limited to that service, rather than affecting the entire system.
+> * **Flexibility**: Microservices can be developed, deployed, and updated independently, allowing for faster release cycles and more flexible innovation.
+> * **Technology Heterogeneity**: Microservices can be built using different technologies that are best suited to the specific service, rather than being limited to a single technology stack for the entire system.
+> * **Improved fault isolation**: The smaller, isolated components of microservices make it easier to identify and fix problems in the system.
+> * **Cost Savings**: By breaking down the system into smaller, modular components, it becomes easier to manage the costs of development, testing, and deployment.
+> * **Improved DevOps**: Microservices promote DevOps best practices such as continuous integration, delivery, and deployment, which results in faster and more reliable software delivery.
+> 
+>Overall, the microservices architecture allows for greater agility, scalability, and resilience, making it a popular choice for modern, complex software systems.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
+
+## 8.What is DDD. What are the main concepts of it?
+### Answer
+>DDD (Domain-Driven Design) is a software design approach that focuses on defining and solving business problems and processes through software. It is a method for creating complex and scalable software systems that are aligned with the needs of the business. /
+>The main concepts of DDD are:
+>* **Bounded Context:** This defines the scope of a domain model and provides the context for its components.
+>* **Domain Model:** A representation of the business concepts and rules in the problem space.
+>* **Entity:** A unique and identifiable object in the problem space with its own lifecycle.
+>* **Value Object:** An object that represents a simple value in the problem space, such as a date or a monetary amount, and does not have an identity of its own.
+>* **Aggregate:** A group of objects that are treated as a single unit and have a single root entity.
+>* **Repository:** A mechanism for retrieving and storing domain objects.
+>* **Services:** Operations that do not naturally fit within an Entity or Value Object, but still represent a business capability.
+>* **Ubiquitous Language:** A shared language between the development team and the business stakeholders, used to ensure that the software design accurately reflects the business needs.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
+
+## 9. What is Liskov substitution principle?
+### Answer
+>The Liskov Substitution Principle (LSP) is a principle in object-oriented programming that states that objects of a superclass should be able to be replaced with objects of a subclass without affecting the correctness of the program. In simpler terms, it means that if a program is written to work with a certain type of object, it should be able to work with any subtype of that object without any modification.
+
+>For example, if you have a Vehicle class, and you create a Car class that inherits from the Vehicle class, the Liskov Substitution Principle states that any code that is written to work with a Vehicle object should be able to work with a Car object without any modification, because a Car is a type of Vehicle.
+
+>The Liskov Substitution Principle is related to the concept of polymorphism, which allows objects of different classes to be used interchangeably, as long as they implement a common interface. To follow the LSP, the derived classes should be substitutable for their base classes, and it should be able to use any derived class in place of its base class without altering the desirable properties of the program.
+
+>The LSP is important to make sure that the code is easy to understand, maintain, and extend. It helps to reduce the number of dependencies between different parts of the code, making the code more robust and less prone to errors.
+
+>It's important to note that the LSP is not a hard rule and it's not always easy or practical to follow it strictly. Sometimes, it's necessary to break the LSP in order to achieve other goals, such as performance or security. But it should be done with care, and always in a way that's easy to understand, maintain, and extend.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | General Desciptions         | Gives resonable example |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+---
+<br/><br/>
+
+## 10. What is validation. Where and why it is used? 
 ### Answer
 >Validation is the process of checking that data entered into a system conforms to a set of rules or constraints. It is used to ensure that the data is accurate, complete, and in the correct format.
 
@@ -217,7 +289,7 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 7. What is caching. Have you used it? What tools you have used? 
+## 11. What is caching. Have you used it? What tools you have used? 
 ### Answer
 >Caching is a technique of storing frequently accessed data in a temporary storage area, called a cache, to speed up future access to the data. Caching is commonly used in computer science and software engineering to improve the performance of systems by reducing the need to access slower storage media or retrieve data over a network.
 Microsoft's in-memory caching framework, ASP.NET Core Memory Cache: This is a built-in caching mechanism provided by the ASP.NET Core framework that allows developers to cache data in memory.
@@ -240,7 +312,7 @@ Microsoft's in-memory caching framework, ASP.NET Core Memory Cache: This is a bu
 ---
 <br/><br/>
 
-## 8. Describe please step by step the process of sending a request to server and getting a response 
+## 12. Describe please step by step the process of sending a request to server and getting a response 
 ### Answer
 >When a client, such as a web browser, wants to send a request to a server over HTTPS, the following steps take place:
 
@@ -290,27 +362,6 @@ Also, ASP.NET Core is the latest version of ASP.NET, which is a redesign of the 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | General Desciptions         | The more the better |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
----
-<br/><br/>
-
-## 8. What is Liskov substitution principle?
-### Answer
-
->The Liskov Substitution Principle (LSP) is a principle in object-oriented programming that states that objects of a superclass should be able to be replaced with objects of a subclass without affecting the correctness of the program. In simpler terms, it means that if a program is written to work with a certain type of object, it should be able to work with any subtype of that object without any modification.
-
->For example, if you have a Vehicle class, and you create a Car class that inherits from the Vehicle class, the Liskov Substitution Principle states that any code that is written to work with a Vehicle object should be able to work with a Car object without any modification, because a Car is a type of Vehicle.
-
->The Liskov Substitution Principle is related to the concept of polymorphism, which allows objects of different classes to be used interchangeably, as long as they implement a common interface. To follow the LSP, the derived classes should be substitutable for their base classes, and it should be able to use any derived class in place of its base class without altering the desirable properties of the program.
-
->The LSP is important to make sure that the code is easy to understand, maintain, and extend. It helps to reduce the number of dependencies between different parts of the code, making the code more robust and less prone to errors.
-
->It's important to note that the LSP is not a hard rule and it's not always easy or practical to follow it strictly. Sometimes, it's necessary to break the LSP in order to achieve other goals, such as performance or security. But it should be done with care, and always in a way that's easy to understand, maintain, and extend.
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
 | **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 | **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---

@@ -45,7 +45,7 @@ Restrictions. Don’t have any. Can join in one month
 Would work with him: Yes 
 Restrictions for work: no, can join in the beginning of April. Has prepaid vacation in July
 Vector of development: Technical 
-
+Educability: educable ,learns technologies in his free time
 Problem solving skills: Able to solve technical problems 
 
 Personal Impression: Has good theoretical and practical knowledge of the main technologies that he uses (C#, .NET, ASP.NET Core). Has some space for improvement in SQL and databases. Has a wide range of technologies and tools used during career but has used most of them one or two times. Is a lead of 3-5 members team in his current position, so has some managerial experience as well. 

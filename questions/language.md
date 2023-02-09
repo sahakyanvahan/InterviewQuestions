@@ -1,7 +1,7 @@
 <h1 align="center"> Language</h1>
 <br/><br/>
 
-## 1. Are you familiar with async and await keywords in C#? What they are used for? How they work under the hood?
+## 1. Are you familiar with async and await keywords in C#? What they are used for? How they work under the hood? What is the difference between this and multithreading?
 ### Answer
 >`async` and `await` are C# language keywords that allow you to write asynchronous code that is easy to read and understand. Under the hood, they work by using a combination of the `Task` and `Task<T>` classes and the async and await operators to represent and manipulate asynchronous operations.
 

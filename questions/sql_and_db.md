@@ -24,6 +24,24 @@ Performance: RDBs are generally better suited for complex queries and transactio
 ---
 <br/><br/>
 
+## 1. What’s the difference between MSSQL and SQL lite 
+### Answer
+>SQL Server (MSSQL) and SQLite are both relational database management systems, but they have some key differences
+
+> * **Scalability:** SQL Server is a full-fledged enterprise database system and can handle large amounts of data and concurrent users, while SQLite is designed for lighter-weight, embedded database applications.
+> * **Complexity:** SQL Server has many advanced features such as user management, stored procedures, and triggers, making it a more complex system to use, while SQLite is simpler and easier to use.
+> * **Cost:** SQL Server is a commercial product and requires a license, while SQLite is open source and free to use.
+> * **Performance:** SQL Server is optimized for performance and can handle high-performance workloads, while SQLite is designed for smaller, lower-performance applications.
+> * **Deployment:** SQL Server typically requires a dedicated server for deployment, while SQLite can be easily embedded within an application and deployed on a wide range of platforms.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
 ## 2. What is CAP theorem
 ### Answer
 > The CAP theorem, also known as Brewer's theorem, states that it is impossible for a distributed system to simultaneously provide all three of the following guarantees: 
