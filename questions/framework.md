@@ -352,6 +352,20 @@ var customers = from c in context.Customers
 > * **Prioritize tests:** Prioritize tests based on the criticality of the code. Write tests for the most critical parts of the code first.
 > * **Write meaningful test names:** Test names should clearly describe what the test is doing, making it easier to understand the intent of the test
 
+>The "Red-Green-Refactor" approach is a common practice in Test-Driven Development (TDD). It involves writing a failing test first, and then writing the minimum amount of code necessary to make the test pass. Finally, you refactor the code to make it clean, maintainable, and efficient.
+
+>Here's how the "Red-Green-Refactor" approach works in detail:
+
+> * **Red:** Write a failing test case for the new functionality you want to add. The test should express the desired behavior of the code, and should initially fail because the functionality hasn't been implemented yet.
+
+> * **Green:** Write the minimum amount of code necessary to make the test pass. This should be the bare minimum implementation, with no frills or unnecessary complexity.
+
+> * **Refactor:** Once the test is passing, clean up the code, making it readable, maintainable, and efficient. You can also add additional tests if necessary to ensure the code works as expected.
+
+>This approach helps you focus on writing code that works, and not just code that compiles. It also helps you ensure that your code is well-designed, readable, and maintainable, as you are forced to think about the design and implementation of the code before writing it.
+
+>In TDD, the "Red-Green-Refactor" approach is repeated for each new feature or change you want to make to the code. This results in a suite of tests that provide a safety net for your code, making it easier to catch and fix bugs, and ensuring that new changes don't break existing functionality.
+
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | No Answer                   |                 |
