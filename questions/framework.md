@@ -329,9 +329,69 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
-## 16. How to test private methods 
+## 16. What is TDD? Pros and Cons. 
 ### Answer
-> There is no way to test private methods. They are implementation details 
+> Test-Driven Development (TDD) is a software development methodology where the development of software is done through a repeated process of writing test cases before writing the code and then writing just enough code to pass the tests. The cycle of writing tests, writing code, and refactoring the code continues until the software meets all the requirements.
+> 
+> ### **Pros:**
+> * **Improved code quality:** By writing tests first, developers can ensure that the code meets the requirements and works as intended.
+> * **Early detection of bugs:** Tests help to catch bugs early in the development process, making it easier and quicker to fix them.
+> * **Better design:** The process of writing tests can help to reveal design flaws and improve the overall design of the code.
+> * **Increased confidence:** With a comprehensive suite of tests, developers can feel confident in making changes to the code without introducing new bugs.
+
+> ### **Cons:**
+> * **Time-consuming:** Writing tests takes time, which can be a drawback, especially in fast-paced development environments.
+> * **Overhead:** The process of TDD can add an additional layer of complexity to the development process.
+> * **Resistance to change:** TDD requires a change in mindset and approach to software development, which can be difficult for some developers to adopt.
+
+> ### **Best practices:**
+> * **Write tests first:** Always write tests before writing the code, to ensure that the code meets the requirements and works as intended.
+> * **Keep tests simple:** Tests should be simple, focused, and fast. Avoid complex test setups and keep tests independent of each other.
+> * **Automate tests:** Automate as many tests as possible to save time and ensure consistency.
+> * **Refactor code regularly:** Regularly refactor code to keep it clean and maintainable.
+> * **Prioritize tests:** Prioritize tests based on the criticality of the code. Write tests for the most critical parts of the code first.
+> * **Write meaningful test names:** Test names should clearly describe what the test is doing, making it easier to understand the intent of the test
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 17. How to test private methods 
+### Answer
+
+>The best practice for testing private methods in C# is to focus on testing the public API of a class, and not rely on the implementation details of private methods. This results in a cleaner design, better code maintainability, and more robust tests.
+
+> * **Reflection:** You can use the Reflection API to access private methods and invoke them. Reflection allows you to dynamically inspect and interact with types and members of an assembly, including private methods.
+>
+> With `PrivateObject`, you can access and invoke private methods, properties, and fields of a class. It is especially useful when you need to test code that has tight coupling between the implementation and the private methods.
+>Here's an example of how to use `PrivateObject` to test a private method:
+
+``` C#
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+
+[TestClass]
+public class MyClassTests
+{
+    [TestMethod]
+    public void TestPrivateMethod()
+    {
+        var myClass = new MyClass();
+        var privateObject = new PrivateObject(myClass);
+
+        int result = (int)privateObject.Invoke("PrivateMethod", 42);
+
+        Assert.AreEqual(84, result);
+    }
+}
+```
+
+>In this example, we create an instance of the `PrivateObject` class, passing in an instance of the `MyClass` class. Then, we use the `Invoke` method of the `PrivateObject` class to access and invoke the private method `PrivateMethod`, passing in an argument of 42. Finally, we use an `Assert` statement to verify that the result of the invocation is 84.
+
+>It's important to note that relying on `PrivateObject` to test private members of a class goes against the principles of unit testing, as it tightly couples the tests to the implementation details of the class. It's better to refactor the code and test the public API of the class instead, whenever possible.
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
