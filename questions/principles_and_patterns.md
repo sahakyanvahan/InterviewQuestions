@@ -203,8 +203,17 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 7.What are the core advantages of using microservices architecture
+## 7.What is microservice architecture. What are the core advantages of using microservices architecture
 ### Answer
+>Microservice architecture is a software design pattern where a large application is decomposed into a collection of smaller, independent services that communicate with each other through well-defined APIs. The goal of this architecture is to improve scalability, maintainability, and resilience by breaking down a monolithic application into smaller, loosely coupled components that can evolve and be deployed independently.
+
+>Each microservice in a microservice architecture is responsible for a specific business capability and operates as a separate process, with its own database and independent deployment cycle. This allows for faster development and deployment, as well as easier scaling of individual components.
+
+>However, this architecture also comes with certain challenges, such as increased operational complexity, the need for effective communication between services, and the need for robust service discovery and routing mechanisms.
+
+>Overall, microservice architecture is well-suited for complex, large-scale applications where the traditional monolithic architecture can become difficult to manage and evolve over time.
+
+> ### **Pros**
 > * **Scalability**: Microservices allow for individual services to be scaled independently, allowing for greater flexibility in managing the load and performance of the system.
 > * **Resilience**: By breaking down the system into smaller, independent services, the impact of a failure in one service is limited to that service, rather than affecting the entire system.
 > * **Flexibility**: Microservices can be developed, deployed, and updated independently, allowing for faster release cycles and more flexible innovation.
@@ -212,8 +221,17 @@ They are also easy to test, and can be easily integrated with other systems and 
 > * **Improved fault isolation**: The smaller, isolated components of microservices make it easier to identify and fix problems in the system.
 > * **Cost Savings**: By breaking down the system into smaller, modular components, it becomes easier to manage the costs of development, testing, and deployment.
 > * **Improved DevOps**: Microservices promote DevOps best practices such as continuous integration, delivery, and deployment, which results in faster and more reliable software delivery.
+
+> ### **Cons**
+> * **Complexity:** With many independent services, the overall system can become more complex to manage, monitor, and test.
+> * **Communication overhead:** Microservices must communicate with each other, and this communication can add latency and increase the risk of failure, which requires careful design and testing to mitigate.
+> * **Integration issues:** Integration between services can be more difficult and time-consuming, requiring more effort to ensure data consistency and ensure that services are correctly communicating with each other.
+> * **Increased operational overhead:** With many services to manage, monitoring and maintaining the system can be more challenging, requiring a larger and more specialized operations team.
+> * **Increased testing overhead:** Testing a microservice-based system can be more complex, requiring more testing effort to ensure that services are working correctly together.
 > 
 >Overall, the microservices architecture allows for greater agility, scalability, and resilience, making it a popular choice for modern, complex software systems.
+
+
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
