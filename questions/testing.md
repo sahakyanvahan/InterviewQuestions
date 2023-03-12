@@ -110,7 +110,43 @@
 ---
 <br/><br/>
 
-## 5. How to test private methods 
+## 5. Are you familiar with mutations testing?
+### Answer
+> Mutation testing is a software testing technique that involves introducing small changes, called mutations, to the code in order to test the effectiveness of the existing tests. The idea is to create artificial faults or defects in the code, and then run the test suite to see if it can detect the faults.
+
+> In mutation testing, the tester uses a tool to automatically generate small variations, or mutations, of the code. The mutations are typically simple changes such as swapping the order of two statements, replacing an operator with another, or inserting a logical negation.
+
+> Once the mutations are generated, the tool runs the existing test suite against each mutated version of the code. If the test suite can detect the mutation, it means the mutation is "killed". If the test suite fails to detect the mutation, it means the mutation "survived" and indicates a gap in the test suite.
+
+> Mutation testing is a powerful technique for evaluating the quality of a test suite. It helps to identify gaps in the test suite, such as weak or missing assertions, and can help improve the overall quality of the code by detecting defects that may have gone undetected otherwise.
+
+> During mutation testing, the score is a metric that represents the effectiveness of the test suite in detecting mutations. The score is calculated as the ratio of the number of mutations that were killed by the test suite to the total number of mutations that were generated.
+
+> A high mutation score indicates that the test suite is effective in detecting faults in the code. A low mutation score indicates that there are gaps in the test suite that need to be addressed.
+
+> The mutation score is typically used as a measure of the quality of the test suite. A high mutation score can give developers confidence that the test suite is effective in detecting faults, while a low mutation score can indicate that further testing is needed.
+
+> It's worth noting that while a high mutation score is desirable, it doesn't necessarily guarantee that the test suite is perfect or that the code is bug-free. Mutations are a simplification of the types of faults that can occur in code, and it's possible for some faults to go undetected by the test suite even if the mutation score is high. As such, mutation testing should be used as part of a broader testing strategy that includes other techniques such as unit testing, integration testing, and manual testing.
+
+> **There are several tools available for implementing mutation testing in C#. Some popular tools include:**
+
+> **Stryker.NET:** Stryker.NET is a mutation testing framework for .NET applications. It supports C# and VB.NET and integrates with popular test frameworks like NUnit and MSTest. Stryker.NET can automatically generate and run mutations, and provides a dashboard for visualizing the results.
+
+> **NinjaTurtles:** NinjaTurtles is another mutation testing tool for .NET applications. It supports C# and VB.NET and integrates with test frameworks like NUnit and xUnit. NinjaTurtles can automatically generate mutations and provides a simple command-line interface for running the tests and analyzing the results.
+
+> **PITest:** PITest is a mutation testing tool for Java applications, but it also supports C# through the use of the Sharpen tool. PITest can automatically generate and run mutations, and provides a dashboard for visualizing the results.
+
+> To use these tools, you typically need to include them as a dependency in your project and configure them to work with your test framework. Once the tool is configured, you can run the mutation testing process, which involves generating mutations, running the test suite against the mutated code, and analyzing the results.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | No Answer                   |                 |
+| **L2**    | Right Answer                |                 |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+---
+<br/><br/>
+
+## 6. How to test private methods 
 ### Answer
 
 >The best practice for testing private methods in C# is to focus on testing the public API of a class, and not rely on the implementation details of private methods. This results in a cleaner design, better code maintainability, and more robust tests.
