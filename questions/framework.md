@@ -265,3 +265,68 @@ var customers = from c in context.Customers
 ---
 <br/><br/>
 
+## 13. What is the difference between ASP.NET and ASP.NET Core
+### Answer
+
+> * **Cross-platform support:** ASP.NET Core is designed to be cross-platform, meaning it can run on Windows, Linux, and macOS. ASP.NET, on the other hand, only runs on Windows.
+
+> * **Open-source:** ASP.NET Core is open-source and available on GitHub, whereas ASP.NET is closed-source and only available as part of the .NET Framework.
+
+> * **Modular architecture:** ASP.NET Core has a more modular architecture than ASP.NET, which means that it's easier to pick and choose the components you need for your application. This can make it more lightweight and efficient than ASP.NET.
+
+> * **Improved performance:** ASP.NET Core is generally faster and more efficient than ASP.NET, thanks to improvements in areas like routing, middleware, and dependency injection.
+
+> * **Razor Pages:** ASP.NET Core includes a new web framework called Razor Pages, which allows developers to create simple, single-page applications without having to use a full MVC framework. ASP.NET doesn't have an equivalent framework.
+
+> * **Dependency injection:** ASP.NET Core has built-in support for dependency injection, making it easier to manage dependencies and write testable code. ASP.NET doesn't have built-in support for dependency injection.
+
+> * **Configuration:** ASP.NET Core has a more flexible and powerful configuration system than ASP.NET, allowing you to configure your application using a variety of different sources and formats.
+
+> * **Middleware:** ASP.NET Core includes a middleware pipeline that allows you to easily add custom logic to your application's request/response pipeline. ASP.NET doesn't have an equivalent feature.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
+
+## 14: What are action filters
+### Answer
+
+> Action filters are a feature of the MVC framework that allow developers to add custom logic to the processing pipeline for controller actions. Action filters can be used to perform tasks such as authentication, logging, caching, and error handling, and they can be applied globally to all actions in a controller or individually to specific actions. The MVC framework includes several built-in action filters, such as the [Authorize] filter for handling authentication and the [OutputCache] filter for caching output, but developers can also create their own custom action filters by deriving from the ActionFilterAttribute class.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
+
+## 14: What is the role of the Global.asax file in an ASP.NET application?
+### Answer
+
+> The Global.asax file is a special file that is used to define application-level events and configuration settings in an ASP.NET application. It contains event handlers for important application-level events, such as Application_Start and Application_End, as well as configuration settings that apply to the entire application, such as custom error handling and session state configuration.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
+
+## 14: How does ASP.NET handle routing and how can you configure routing in your application?
+### Answer
+
+> ASP.NET routing allows you to map URLs to specific actions or controllers in your application, which makes it easier to create user-friendly URLs and to handle complex routing scenarios. You can configure routing in your application by using the routing configuration settings in the web.config file or by using attributes and routing templates in your controllers or actions. You can also create custom route handlers to handle more complex routing scenarios, such as dynamic routing based on user input or custom URL schemes.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Basic Knowledge             |                 |
+| **L2**    | General Knowledge           |                 |
+| **L3**    | Strong in Depth Knowledge   |                 |
+---
+<br/><br/>
