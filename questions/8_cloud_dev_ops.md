@@ -62,7 +62,7 @@ With Azure Functions, developers only pay for the compute resources they consume
 ---
 <br/><br/>
 
-## 3. What CI/CD tools you have used. How ideal CI pipeline should look like?
+## 4. What CI/CD tools you have used. How ideal CI pipeline should look like?
 ### Answer
 
 >WBest practices for CI/CD?
@@ -101,7 +101,7 @@ With Azure Functions, developers only pay for the compute resources they consume
 ---
 <br/><br/>
 
-## 3. Do you know what is IaaS, PaaS and SaaS. What is difference between them?
+## 5. Do you know what is IaaS, PaaS and SaaS. What is difference between them?
 ### Answer
 >IaaS, PaaS and SaaS are types of cloud computing services.
 
