@@ -108,6 +108,178 @@ Interpreter: Implements a specialized language by representing its grammar rules
 ---
 <br/><br/>
 
+## 4. Please describe builder and factory pattern, and what is thee difference between them
+>The Builder pattern and the Factory pattern are both creational design patterns used in object-oriented programming to create objects in a controlled and efficient way.
+
+>The main difference between these two patterns lies in their primary use cases and the way they achieve object creation.
+
+>The Builder pattern is used when we want to create complex objects step-by-step, with the ability to customize the creation process along the way. This pattern is useful when we have an object with many optional parameters, or when we need to create a family of related objects that share a common creation process but differ in some of their attributes.
+
+>The Builder pattern typically involves creating a Builder class with methods to set each attribute of the object being created, and a build method that constructs the final object. The client code calls the Builder's methods to set the desired attributes and then calls the build method to get the final product.
+
+>The Factory pattern, on the other hand, is used when we want to create objects of different types based on some criteria, without exposing the creation logic to the client code. This pattern is useful when we need to create objects dynamically, based on user input, configuration settings, or other runtime conditions.
+
+>The Factory pattern typically involves creating a Factory class with a method that takes some input and returns a new instance of a specific class, based on that input. The client code calls the Factory's method to get the desired object, without needing to know how the object is actually created.
+
+>In summary, the Builder pattern is used to create complex objects step-by-step, with customization options, while the Factory pattern is used to create objects of different types based on runtime criteria.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | General Desciptions         | Gives resonable example |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+---
+<br/><br/>
+
+## 5. What are behavioral design patterns?
+>Behavioral design patterns are a set of design patterns that focus on communication and interaction between objects and classes. These patterns describe how objects and classes interact with each other and how they behave in different situations, scenarios, or contexts.
+
+>Behavioral patterns are used to solve common problems in software design related to the interaction and communication of objects and classes. They help to increase the flexibility, extensibility, and reusability of the code by separating the behavior from the implementation.
+
+>There are several behavioral design patterns, including:
+
+> * **Observer pattern:** It defines a one-to-many dependency between objects so that when one object changes its state, all its dependents are notified and updated automatically.
+
+> * **Strategy pattern:** It defines a family of algorithms, encapsulates each one, and makes them interchangeable at runtime.
+
+> * **Command pattern:** It encapsulates a request as an object, thereby allowing for the parameterization of clients with different requests, queue or log requests, and support undoable operations.
+
+> * **Template method pattern:** It defines the skeleton of an algorithm in a base class and allows subclasses to override certain steps of the algorithm without changing its structure.
+
+> * **Iterator pattern:** It provides a way to access the elements of an object sequentially without exposing its underlying representation.
+
+> * **Chain of Responsibility pattern:** It allows a chain of objects to handle a request, where each object in the chain has the ability to either handle the request or pass it on to the next object in the chain.
+
+> * **Interpreter pattern:** It defines a grammar for a language and provides an interpreter to interpret sentences in the language.
+
+>These patterns help to improve the maintainability, scalability, and testability of the software by reducing the coupling and increasing the cohesion between the objects and classes.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | General Desciptions         | Gives resonable example |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+---
+<br/><br/>
+
+## 6. Can you please describe command pattern. What is the puropse of it? Where it can be used. How it usually implemented?
+>The Command pattern is a behavioral design pattern that encapsulates a request as an object, allowing the requesting object to be decoupled from the object that receives and executes the request. The purpose of the Command pattern is to allow clients to request an action without knowing anything about the receiving object or the operation being performed.
+
+>The Command pattern is useful in situations where we need to implement complex undo/redo functionality, support multiple levels of undo, or implement transactional behavior, where a group of operations should be treated as a single unit of work.
+
+>The Command pattern is typically implemented by defining a Command interface that declares an execute method, which encapsulates the action to be performed. Concrete command classes implement the Command interface and encapsulate a specific operation, along with any necessary parameters. The Invoker class maintains a list of Command objects and can execute the commands in the list, typically by calling their execute method.
+
+>The Receiver class is responsible for executing the requested action, typically by invoking methods on itself or other objects. The client creates a Command object and sets its receiver and parameters, and then passes the command object to the Invoker, which adds it to its list of commands.
+
+>When the Invoker is ready to execute the commands, it simply iterates over the list and calls the execute method on each command object. The command object then delegates the request to the appropriate Receiver object, which performs the actual work.
+
+>Here is an example implementation of the Command pattern in C#:
+
+```C#
+// Command interface
+public interface ICommand
+{
+    void Execute();
+}
+
+// Concrete command classes
+public class OpenFileCommand : ICommand
+{
+    private readonly IFileSystemReceiver _receiver;
+
+    public OpenFileCommand(IFileSystemReceiver receiver)
+    {
+        _receiver = receiver;
+    }
+
+    public void Execute()
+    {
+        _receiver.OpenFile();
+    }
+}
+
+public class CloseFileCommand : ICommand
+{
+    private readonly IFileSystemReceiver _receiver;
+
+    public CloseFileCommand(IFileSystemReceiver receiver)
+    {
+        _receiver = receiver;
+    }
+
+    public void Execute()
+    {
+        _receiver.CloseFile();
+    }
+}
+
+// Receiver interface
+public interface IFileSystemReceiver
+{
+    void OpenFile();
+    void CloseFile();
+}
+
+// Receiver class
+public class FileSystemReceiver : IFileSystemReceiver
+{
+    public void OpenFile()
+    {
+        Console.WriteLine("File opened");
+    }
+
+    public void CloseFile()
+    {
+        Console.WriteLine("File closed");
+    }
+}
+
+// Invoker class
+public class FileInvoker
+{
+    private readonly List<ICommand> _commandList = new List<ICommand>();
+
+    public void AddCommand(ICommand command)
+    {
+        _commandList.Add(command);
+    }
+
+    public void ExecuteCommands()
+    {
+        foreach (var command in _commandList)
+        {
+            command.Execute();
+        }
+        _commandList.Clear();
+    }
+}
+
+// Client code
+public class Client
+{
+    public static void Main(string[] args)
+    {
+        var receiver = new FileSystemReceiver();
+        var openFileCommand = new OpenFileCommand(receiver);
+        var closeFileCommand = new CloseFileCommand(receiver);
+
+        var fileInvoker = new FileInvoker();
+        fileInvoker.AddCommand(openFileCommand);
+        fileInvoker.AddCommand(closeFileCommand);
+
+        fileInvoker.ExecuteCommands();
+    }
+}
+```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | General Desciptions         | Gives resonable example |
+| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
+---
+<br/><br/>
+
 ## 4. Which architectural patterns have you used in your projects? (MVC, MVVM, Layered Architecture, Clean Architecture)  
 ### Answer
 >Free answer

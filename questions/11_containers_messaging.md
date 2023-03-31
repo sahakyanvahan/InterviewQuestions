@@ -76,7 +76,7 @@ Redis provides two mechanisms for data replication: Master-Slave replication and
 ------------------------------------------
 <br/><br/>
 
-## 4. What is Kubernetes? What are advantages of using it?
+## 6. What is Kubernetes? What are advantages of using it?
 ### Answer
 >  Kubernetes (also known as "K8s") is an open-source container orchestration platform that automates the deployment, scaling, and management of containerized applications. Kubernetes provides a way to manage and orchestrate containers across multiple hosts and clusters, allowing developers to deploy and manage applications at scale.
 

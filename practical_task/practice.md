@@ -358,7 +358,6 @@ public class EmployeeControllerTests
 }
 ```
 
-
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | Should write                | Maybe minor issues. Problems with unit tests and fluent validation |
@@ -511,6 +510,102 @@ public class BookService
     }
 }
 ```
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Not neccesarily should write |                |
+| **L2**    | Should write                | Maybe minor problems   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
+---
+<br/><br/>
+
+## 6. Please write an implementation of Command pattern in WPF. We need to bind some action in UI to 
+### Answer
+
+```C#
+public interface ICommand
+{
+    bool CanExecute(object parameter);
+    void Execute(object parameter);
+    event EventHandler CanExecuteChanged;
+}
+
+public class MyCommand : ICommand
+{
+    public bool CanExecute(object parameter)
+    {
+        // This command can always be executed
+        return true;
+    }
+
+    public void Execute(object parameter)
+    {
+        // Perform some action here
+        MessageBox.Show("Button clicked!");
+    }
+
+    public event EventHandler CanExecuteChanged;
+}
+
+<Button Content="Click me!" Command="{Binding MyCommand}" />
+
+public class MyViewModel
+{
+    public ICommand MyCommand { get; } = new MyCommand();
+}
+```
+> First, let's define a simple ICommand interface:
+> Next, we can create a concrete implementation of this interface to represent a command that we want to bind to a control:
+> Now, we can use data binding to associate an instance of this command class with a control in our UI. For example, let's say we have a button that we want to bind this command to:
+> Here, we've set the Command property of the Button to a binding expression that references an instance of our MyCommand class, which is stored in a property on our view model:
+> With this set up, when the user clicks the button, the Execute method of the MyCommand instance will be called, which will in turn show a message box.
+
+| **Level** | **Expectaions**             | **Notes**       |
+|-----------|-----------------------------|-----------------|
+| **L1**    | Not neccesarily should write |                |
+| **L2**    | Should write                | Maybe minor problems   |
+| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | No Problems     |
+---
+<br/><br/>
+
+## 7. Please create an implementation for INotifyPropertyChanged in WPF project and show how to use it
+### Answer
+
+```C#
+public class MyViewModel : INotifyPropertyChanged
+{
+    private string _myProperty;
+
+    public string MyProperty
+    {
+        get { return _myProperty; }
+        set
+        {
+            if (_myProperty != value)
+            {
+                _myProperty = value;
+                OnPropertyChanged(nameof(MyProperty));
+            }
+        }
+    }
+
+    public event PropertyChangedEventHandler PropertyChanged;
+
+    protected virtual void OnPropertyChanged(string propertyName)
+    {
+        PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(propertyName));
+    }
+}
+
+<TextBox Text="{Binding MyProperty}" />
+```
+> In this example, we have a `MyViewModel` class that implements the `INotifyPropertyChanged` interface. The class has a single property called `MyProperty`, which is backed by a private field `_myProperty`. The `MyProperty` property includes a setter that checks whether the new value is different from the current value. If it is, the property value is updated and the `OnPropertyChanged` method is called to raise the `PropertyChanged` event.
+
+>The `OnPropertyChanged` method is a protected virtual method that raises the `PropertyChanged` event. It takes a single argument, which is the name of the property that has changed. In this example, we're using the `nameof` operator to get the name of the property automatically, but you could also hard-code the property name as a string literal.
+
+>To use this class in a WPF project, you would typically create an instance of `MyViewModel` and set it as the `DataContext` for your user interface elements. Then, you could bind the `MyProperty` property to a control in your UI like this:
+
+>This would bind the `Text` property of a `TextBox` control to the `MyProperty` property of the `MyViewModel` instance, so that changes to the `MyProperty` property would automatically update the text displayed in the `TextBox`.
 
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
