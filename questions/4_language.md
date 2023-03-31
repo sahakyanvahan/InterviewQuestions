@@ -13,6 +13,12 @@
 
 >In summary, `async/await` allows C# developer to write asynchronous code that is similar to synchronous code, The async keyword indicate that a method has asynchronous operations, and the await keyword lets the method to wait for the completion of an asynchronous operation before continuing. This is useful for writing code that performs multiple, concurrent tasks that don't block each other.
 
+>Asynchronous programming refers to the ability to execute a long-running operation without blocking the calling thread, and without creating a new thread. Instead of blocking the thread, the operation is executed asynchronously, allowing the thread to continue executing other code while waiting for the operation to complete. Asynchronous programming in C# can be implemented using the async and await keywords, and is typically used for I/O-bound operations, such as network requests or disk I/O.
+
+>On the other hand, multithreading refers to the ability to execute multiple threads concurrently within the same process or application. Each thread runs independently of the other threads, and can perform its own tasks simultaneously. Multithreading in C# can be implemented using the Thread class, or other higher-level abstractions such as the Task or ThreadPool classes. Multithreading is typically used for CPU-bound operations, such as heavy calculations or processing tasks that can benefit from parallelization.
+
+>In summary, asynchronous programming is a way to perform long-running I/O operations without blocking the calling thread, while multithreading is a way to perform CPU-bound operations concurrently using multiple threads. Asynchronous programming is generally used for I/O-bound operations, while multithreading is generally used for CPU-bound operations.
+
 | **Level** | **Expectaions**             | **Notes**       |
 |-----------|-----------------------------|-----------------|
 | **L1**    | General Desciptions         |                 |
