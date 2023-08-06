@@ -1,4 +1,4 @@
-<h1 align="center"> Software design principles and patters </h1>
+<h1 align="center"> Software design principles, patters and architecture </h1>
 <br/><br/>
 
 ## 1. Are you familiar with any software engineering practices? (SOLID, DRY, KISS, CUPID etc.). Can you please describe them? 
@@ -26,13 +26,7 @@
 ---
 <br/><br/>
 
-## 2. Can you please tell me an example where you used SOLID principles. What was the advantages of using them?
-### Answer
-
----
-<br/><br/>
-
-## 3. Are you familiar with design patterns?  
+## 2. Are you familiar with design patterns?  
 ### Answer
 >Design patterns are reusable solutions to common software design problems. They provide a way to structure and organize code in a way that is easy to understand and maintain. Here is a list of some common design patterns, grouped by category:
 
@@ -92,6 +86,35 @@ Interpreter: Implements a specialized language by representing its grammar rules
 ---
 <br/><br/>
 
+## 3. What are antipatterns? Can you name some? Why they are antipatterns? 
+### Answer
+>Antipatterns are commonly used solutions or practices in software development that initially appear to be correct, but they ultimately lead to problems, inefficiencies, or poor code quality. These patterns may seem like the right approach at first glance, but over time, they can cause maintenance challenges, bugs, and decreased overall software quality. Antipatterns are best practices to avoid as they can hinder the development process and create issues for developers and users.
+
+>Here are some examples of software antipatterns and why they are considered problematic:
+
+>**God Object:** The God Object antipattern occurs when a single class or module takes on too many responsibilities, resulting in a massive and tightly coupled entity that knows and does too much.
+Why it's an antipattern: This leads to poor maintainability, as any changes to the class become complex and risk introducing unintended side effects. Additionally, it violates the principle of separation of concerns.
+
+>**Spaghetti Code:** Spaghetti code refers to code that is highly unstructured, with complex and tangled control flow, making it hard to read and understand.
+Why it's an antipattern: Spaghetti code is challenging to maintain and debug. The lack of structure makes it difficult to add new features or fix bugs without introducing more issues.
+
+>**Shotgun Surgery:** Shotgun Surgery occurs when a change in a single feature requires modifications across multiple unrelated classes or modules.
+Why it's an antipattern: This results in code that is difficult to manage, and a small change can lead to unintended consequences in various parts of the codebase.
+
+>**Magic Numbers:** Magic Numbers are hard-coded numeric values scattered throughout the code without clear explanations or meaningful names.
+Why it's an antipattern: Using magic numbers makes the code less maintainable and harder to understand. It is better to use named constants or enumerations to improve code readability and maintainability.
+
+>**Copy-Paste Programming:** Copy-Paste Programming involves duplicating code by copying and pasting it from one place to another instead of creating reusable functions or modules.
+Why it's an antipattern: This leads to code redundancy, making it harder to maintain and update. When a bug is fixed or a feature is added, you may need to make the same change in multiple places, increasing the likelihood of errors and inconsistency.
+
+>**Blob Antipattern:** The Blob antipattern refers to a class or module that becomes excessively large and monolithic, handling many unrelated functionalities.
+Why it's an antipattern: A blob is challenging to understand, test, and maintain. Breaking it down into smaller, focused components will improve code organization and readability.
+
+>It's important to identify and avoid these antipatterns during software development to produce maintainable, scalable, and high-quality code. Following best practices, adhering to design principles, and refactoring when necessary can help mitigate the negative impact of antipatterns and improve the overall software development process.
+
+---
+<br/><br/>
+
 ## 4. Please describe builder and factory pattern, and what is thee difference between them
 >The Builder pattern and the Factory pattern are both creational design patterns used in object-oriented programming to create objects in a controlled and efficient way.
 
@@ -136,7 +159,41 @@ Interpreter: Implements a specialized language by representing its grammar rules
 ---
 <br/><br/>
 
-## 6. Can you please describe command pattern. What is the puropse of it? Where it can be used. How it usually implemented?
+## 5. Are you familiar with CQRS pattern  
+### Answer
+>CQRS (Command-Query Responsibility Segregation) is an architectural pattern that separates the responsibilities of reading and writing data in an application.
+
+>In a CQRS system, the data is split into two separate models: the Command Model, which is responsible for handling write operations, and the Query Model, which is responsible for handling read operations.
+
+>The Command Model is responsible for handling any changes to the data, such as creating new records, updating existing records, or deleting records. The Query Model is responsible for handling any read operations on the data, such as retrieving data from the database.
+
+>The separation of these responsibilities allows for better scalability, performance, and flexibility. Since read and write operations have different requirements and use cases, they can be optimized and scaled independently.
+
+>CQRS pattern can be implemented using different technologies such as Event Sourcing, Domain-Driven Design and Microservices.
+
+>It's important to note that CQRS is not a design pattern for a specific technology or programming language, but a pattern for the architecture of a system.
+
+---
+<br/><br/>
+
+## 6.What pattern is used in your project to communicate with the database?
+### Answer
+>There are several patterns that can be used to communicate with a database in software development. Some of the most commonly used patterns include:
+
+> * **Repository pattern:** This pattern abstracts the data access layer and allows you to define a uniform API for accessing data in your database. This helps to separate the data access logic from the business logic and makes it easier to test and maintain your code.
+
+> * **Unit of Work pattern:** This pattern helps to track changes to objects in memory and ensures that all changes are either committed or rolled back in a single transaction when communicating with a database. This can help to improve the reliability and performance of your database interactions.
+
+> * **Data Mapper pattern:** This pattern separates the object mapping from the database access logic, making it easier to manage changes to the database schema and objects used in the application.
+
+> * **Active Record pattern:** This pattern is an object-oriented approach to database access, where each object represents a database record and provides methods for manipulating the data. This can simplify database access and make it easier to work with database records in your application.
+
+>The choice of pattern will depend on the specific requirements of your application, and there may be other patterns that are better suited to your use case. It's also worth noting that many modern web frameworks provide built-in support for database communication, and you may not need to implement these patterns manually in your code.
+
+---
+<br/><br/>
+
+## 7. Can you please describe command pattern. What is the puropse of it? Where it can be used. How it usually implemented?
 >The Command pattern is a behavioral design pattern that encapsulates a request as an object, allowing the requesting object to be decoupled from the object that receives and executes the request. The purpose of the Command pattern is to allow clients to request an action without knowing anything about the receiving object or the operation being performed.
 
 >The Command pattern is useful in situations where we need to implement complex undo/redo functionality, support multiple levels of undo, or implement transactional behavior, where a group of operations should be treated as a single unit of work.
@@ -249,13 +306,75 @@ public class Client
 ---
 <br/><br/>
 
-## 4. Which architectural patterns have you used in your projects? (MVC, MVVM, Layered Architecture, Clean Architecture)  
+## 8. Which architectural patterns have you used in your projects? (MVC, MVVM, Layered Architecture, Clean Architecture)  
 ### Answer
+> * **Layered Architecture:** In a layered architecture, the software is divided into horizontal layers, each responsible for specific tasks. Typically, you have presentation, business logic, and data access layers.
+Benefits: Clear separation of concerns, modularity, and ease of maintenance.
+Example: The traditional three-tier architecture (Presentation layer, Business layer, Data layer).
+
+> * **Client-Server Architecture:** In a client-server architecture, the software is divided into two parts: the client, which makes requests for services, and the server, which provides those services.
+Benefits: Centralized management, scalability, and flexibility for client devices.
+Example: Web applications using web browsers as clients and web servers as servers.
+
+> * **Microservices Architecture:** In a microservices architecture, the software is composed of small, loosely coupled services that can be independently deployed and maintained.
+Benefits: Scalability, flexibility, and ease of continuous deployment.
+Example: Large web applications or cloud-based systems built with independent microservices.
+
+> * **Event-Driven Architecture:** In an event-driven architecture, components communicate through events and event handlers, allowing for loosely coupled and reactive systems.
+Benefits: Responsiveness, extensibility, and adaptability to changing requirements.
+Example: Message queues or publish-subscribe systems.
+
+> * **Model-View-Controller (MVC):** The MVC architecture separates the application into three components: Model (data and business logic), View (user interface), and Controller (handles user input and updates the model and view).
+Benefits: Separation of concerns, modularity, and support for multiple user interface views.
+Example: Web applications based on MVC frameworks like ASP.NET MVC, Ruby on Rails, or Django.
+
+> * **Service-Oriented Architecture (SOA):** SOA is an architectural style that focuses on providing services as reusable components that can be accessed and combined to build larger applications.
+Benefits: Reusability, interoperability, and flexibility to adapt to changing business needs.
+Example: Enterprise systems built on a set of loosely coupled services.
+
+> * **Component-Based Architecture:** In a component-based architecture, the software is composed of reusable software components that encapsulate specific functionality.
+Benefits: Reusability, easy maintenance, and reduced development time.
+Example: JavaBeans, .NET components.
+
+> * **Monolithic Architecture:** In a monolithic architecture, the entire application is developed as a single unit, typically with a single codebase and database.
+Benefits: Simple deployment and management for smaller applications.
+Example: Traditional desktop applications or some early web applications.
 
 ---
 <br/><br/>
 
-## 5. What is Rest API.  
+## 9. What mean for you good architecture?
+### Answer
+>Key characteristics of a good software architecture include:
+
+> * **Modularity:** The software is divided into modular components, each responsible for specific functionality. Modularity promotes code reusability, maintainability, and ease of understanding.
+
+> * **Scalability:** The architecture allows the software to handle increasing workloads and adapt to changing requirements without significant modifications.
+
+> * **Flexibility:** The architecture should be flexible enough to accommodate new features and changes without affecting existing functionality.
+
+> * **Reliability:** The software architecture should ensure the system's reliability, resilience, and fault tolerance to handle failures gracefully.
+
+> * **Performance:** The architecture should consider performance aspects to deliver optimal speed and responsiveness, minimizing bottlenecks.
+
+> * **Security:** Security concerns should be addressed at various levels of the architecture to protect against potential threats and vulnerabilities.
+
+> * **Maintainability:** The architecture should make it easy for developers to understand, modify, and extend the software over its lifetime.
+
+> * **Simplicity:** Keeping the architecture simple and avoiding unnecessary complexity helps reduce the chances of bugs and improves readability.
+
+> * **Clear Separation of Concerns:** Different concerns (e.g., business logic, data access, presentation) should be clearly separated, following design principles like the Single Responsibility Principle.
+
+> * **Documentation:** Proper documentation of the architecture, design decisions, and system interactions is crucial for effective communication and future maintenance.
+
+> * **Testability:** The architecture should support easy testing of individual components and the overall system to ensure software quality.
+
+> * **Adherence to Design Patterns and Principles:** Utilizing well-known design patterns and adhering to best practices and architectural principles can lead to a more robust and maintainable architecture.
+
+---
+<br/><br/>
+
+## 10. What is Rest API.  
 ### Answer
 >REST (Representational State Transfer) is an architectural style for building web services. A REST API (Application Programming Interface) is a set of rules and conventions for building and interacting with web services that adhere to this architectural style.
 
@@ -289,41 +408,7 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 6. Are you familiar with CQRS pattern  
-### Answer
->CQRS (Command-Query Responsibility Segregation) is an architectural pattern that separates the responsibilities of reading and writing data in an application.
-
->In a CQRS system, the data is split into two separate models: the Command Model, which is responsible for handling write operations, and the Query Model, which is responsible for handling read operations.
-
->The Command Model is responsible for handling any changes to the data, such as creating new records, updating existing records, or deleting records. The Query Model is responsible for handling any read operations on the data, such as retrieving data from the database.
-
->The separation of these responsibilities allows for better scalability, performance, and flexibility. Since read and write operations have different requirements and use cases, they can be optimized and scaled independently.
-
->CQRS pattern can be implemented using different technologies such as Event Sourcing, Domain-Driven Design and Microservices.
-
->It's important to note that CQRS is not a design pattern for a specific technology or programming language, but a pattern for the architecture of a system.
-
----
-<br/><br/>
-
-## 7.What pattern is used in your project to communicate with the database?
-### Answer
->There are several patterns that can be used to communicate with a database in software development. Some of the most commonly used patterns include:
-
-> * **Repository pattern:** This pattern abstracts the data access layer and allows you to define a uniform API for accessing data in your database. This helps to separate the data access logic from the business logic and makes it easier to test and maintain your code.
-
-> * **Unit of Work pattern:** This pattern helps to track changes to objects in memory and ensures that all changes are either committed or rolled back in a single transaction when communicating with a database. This can help to improve the reliability and performance of your database interactions.
-
-> * **Data Mapper pattern:** This pattern separates the object mapping from the database access logic, making it easier to manage changes to the database schema and objects used in the application.
-
-> * **Active Record pattern:** This pattern is an object-oriented approach to database access, where each object represents a database record and provides methods for manipulating the data. This can simplify database access and make it easier to work with database records in your application.
-
->The choice of pattern will depend on the specific requirements of your application, and there may be other patterns that are better suited to your use case. It's also worth noting that many modern web frameworks provide built-in support for database communication, and you may not need to implement these patterns manually in your code.
-
----
-<br/><br/>
-
-## 7.What is microservice architecture. What are the core advantages of using microservices architecture
+## 11.What is microservice architecture. What are the core advantages of using microservices architecture
 ### Answer
 >Microservice architecture is a software design pattern where a large application is decomposed into a collection of smaller, independent services that communicate with each other through well-defined APIs. The goal of this architecture is to improve scalability, maintainability, and resilience by breaking down a monolithic application into smaller, loosely coupled components that can evolve and be deployed independently.
 
@@ -354,7 +439,7 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 8.What is DDD. What are the main concepts of it?
+## 12.What is DDD. What are the main concepts of it?
 ### Answer
 >DDD (Domain-Driven Design) is a software design approach that focuses on defining and solving business problems and processes through software. It is a method for creating complex and scalable software systems that are aligned with the needs of the business. /
 >The main concepts of DDD are:
@@ -370,7 +455,7 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 9. What is Liskov substitution principle?
+## 13. What is Liskov substitution principle?
 ### Answer
 >The Liskov Substitution Principle (LSP) is a principle in object-oriented programming that states that objects of a superclass should be able to be replaced with objects of a subclass without affecting the correctness of the program. In simpler terms, it means that if a program is written to work with a certain type of object, it should be able to work with any subtype of that object without any modification.
 
@@ -385,101 +470,3 @@ They are also easy to test, and can be easily integrated with other systems and 
 ---
 <br/><br/>
 
-## 10. What is validation. Where and why it is used? 
-### Answer
->Validation is the process of checking that data entered into a system conforms to a set of rules or constraints. It is used to ensure that the data is accurate, complete, and in the correct format.
-
->Validation is typically used in forms, input fields and APIs to validate input data.
-
->Validation is important because it helps to ensure the integrity of data stored in a system, and can prevent errors and inconsistencies from occurring. It can also help to protect the system from malicious input, such as SQL injection attacks.
-
->Validation can be performed on both the client-side and server-side of an application. Client-side validation is performed by JavaScript or other client-side scripting languages, and can provide immediate feedback to the user about any errors in the input data. Server-side validation is performed by the application after the data has been submitted and can provide a more secure form of validation as it cannot be bypassed by malicious users.
-
->Validation can be performed in many ways, such as using regular expressions, comparing input to a predefined list of accepted values, or using a validation library or framework. It is mostly used in web development, in forms and APIs to ensure the data entered by the user or client is correct and in the correct format before it is processed by the server. It also helps in preventing data loss and data corruption, and also helps in maintaining the data quality and consistency.
-
->.NET developers have a variety of tools and techniques available for validation in their applications. Some popular ones include:
-
->Data Annotation Attributes: These are attributes that can be applied to properties of a model class to specify validation rules. Examples include `[Required]`, `[Range]`, and `[RegularExpression]`. These attributes can be used with the `ModelState.IsValid` property in ASP.NET Core MVC to perform validation on the server-side.
-
-> **Model Validation**: Model validation is a technique that allows developers to define validation rules on a model class. These rules can be specified using Data Annotation Attributes or by creating a custom validation attribute.
-
-> **Fluent Validation**: FluentValidation is an open-source library that allows developers to define validation rules using a fluent interface. It provides a simple and flexible way to define validation rules and is well-suited to complex validation scenarios.
-
-> **ASP.NET Core Tag Helpers**: These are built-in tag helpers that can be used to perform validation on the client-side. These tag helpers can be used to display error messages and validation summaries, and can also be used to disable form elements based on the validation state of the form.
-
-> **Client-side JavaScript Validation**: This is a technique that allows developers to perform validation on the client-side using JavaScript or other client-side scripting languages. This can provide immediate feedback to the user about any errors in the input data.
-
-> **Regex**: Regular expressions are a powerful tool for validating input data. .NET provides a built-in class Regex for working with regular expressions.
-
->These are just a few examples of the tools and techniques available for validation in .NET, depending on the specific needs of the application, developers can choose the best tool that fits the requirement.
-
----
-<br/><br/>
-
-## 11. What is caching. Have you used it? What tools you have used? 
-### Answer
->Caching is a technique of storing frequently accessed data in a temporary storage area, called a cache, to speed up future access to the data. Caching is commonly used in computer science and software engineering to improve the performance of systems by reducing the need to access slower storage media or retrieve data over a network.
-Microsoft's in-memory caching framework, ASP.NET Core Memory Cache: This is a built-in caching mechanism provided by the ASP.NET Core framework that allows developers to cache data in memory.
-
-* **Microsoft's distributed caching framework, ASP.NET Core Distributed Cache**: This is a caching mechanism provided by the ASP.NET Core framework that allows developers to cache data across multiple servers in a distributed environment.
-
-* **Redis**: An open-source, in-memory data store that supports a wide range of data structures and can be used as a caching tool.
-
-* **Memcached**: An open-source, in-memory key-value store that is often used as a caching tool.
-
-* **NCache**: A commercial, in-memory distributed caching solution for .NET developers. It supports various data structures like dictionaries, lists, etc.
-
-* **StackExchange.Redis** : it is a high-performance general-purpose redis client for .NET languages.
-
----
-<br/><br/>
-
-## 12. Describe please step by step the process of sending a request to server and getting a response 
-### Answer
->When a client, such as a web browser, wants to send a request to a server over HTTPS, the following steps take place:
-
->The client initiates a secure SSL/TLS connection with the server by sending a request to establish a secure session. This request includes the client's SSL/TLS supported versions and the client's SSL/TLS supported ciphers.
-
->The server responds with its own SSL/TLS supported versions and ciphers, along with its SSL/TLS certificate, which includes the server's public key. The client verifies the authenticity of the server certificate by checking it against a trusted certificate authority (CA) or a locally stored list of trusted CAs.
-
->Once the SSL/TLS session is established, the client and the server use the agreed-upon cipher to exchange a symmetric key that will be used for encrypting all further communication.
-
->The client sends the request to the server using the HTTP protocol. In this case, the request is encapsulated in an SSL/TLS encrypted message. The request includes the URL, the HTTP method (e.g., GET, POST), any headers and the data that needs to be sent to the server.
-
->The server receives the request, decrypts the message using the symmetric key, and processes the request. The server may look up data in a database, perform calculations, or generate dynamic content based on the request.
-
->The server generates the response, encrypts it using the symmetric key, and sends it back to the client. The response includes the HTTP status code (e.g., 200 for success, 404 for not found), the response body (i.e., the data returned by the server), and any headers that are required.
-
->The client receives the response, decrypts the message using the symmetric key, and processes the response. This may involve displaying the response data in a web page, or using the data to update the state of the application.
-
->The SSL/TLS session is closed and the communication between the client and the server is terminated.
-
-# .NET SERVER PART
->ASP.NET is a web application framework for building web applications using the .NET framework. Here is a general overview of how ASP.NET handles requests and creates responses:
-
->A client, such as a web browser, sends a request to an ASP.NET web server using the HTTP protocol. The request includes details such as the URL, the HTTP method (e.g., GET, POST), and any data that needs to be sent to the server.
-
->The request is received by the web server, which then forwards the request to the ASP.NET runtime. The ASP.NET runtime is responsible for processing requests and creating responses.
-
->The ASP.NET runtime checks the URL of the request against the routing configuration of the application. The routing configuration maps URLs to specific controllers or actions.
-
->If the URL matches a configured route, the ASP.NET runtime creates an instance of the corresponding controller and calls the appropriate action method. The action method can perform various tasks, such as looking up data in a database, performing calculations, or generating dynamic content.
-
->Once the action method has finished executing, the controller creates a view model, which is a model that contains the data that needs to be rendered by the view.
-
->The controller then selects the appropriate view to render the view model. The view is a template that defines the layout and structure of the HTML that will be sent back to the client.
-
->The view is then rendered by the view engine, which uses the view model data to create the final HTML response. The response is then sent back to the client by the web server.
-
->The client receives the response, processes it, and displays it in the browser.
-
->Note that this process can be more complex in real-world scenarios, for example:
-
->The server might use caching to avoid recomputing the same response for multiple requests;
-The communication can be encrypted using https instead of http
-The request and response can contain many more headers, like cookies, auth token, content-type, etc
-The server can forward the request to another server, this process can happen multiple times before the final response is sent to the client.
-Also, ASP.NET Core is the latest version of ASP.NET, which is a redesign of the original ASP.NET and it has some differences in the way it handles requests and creates responses compared to the older versions of ASP.NET
-
----
-<br/><br/>
