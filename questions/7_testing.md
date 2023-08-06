@@ -1,6 +1,6 @@
 <h1 align="center"> Testing </h1>
 <br/><br/>
-test
+
 ## 1. Are you familiar with FIRST principles of Unit testing?
 ### Answer
 >The FIRST principles of unit testing are a set of guidelines that can help you write high-quality, effective unit tests. The acronym "FIRST" stands for:
