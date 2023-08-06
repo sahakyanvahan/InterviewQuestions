@@ -19,11 +19,6 @@
 
 >In summary, asynchronous programming is a way to perform long-running I/O operations without blocking the calling thread, while multithreading is a way to perform CPU-bound operations concurrently using multiple threads. Asynchronous programming is generally used for I/O-bound operations, while multithreading is generally used for CPU-bound operations.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Describes how it works under the hood |
 ---
 <br/><br/>
 
@@ -32,11 +27,6 @@
 
 >An extension method in C# is a method that is added to an existing type, such as a class or interface, but is implemented as a separate static method. Extension methods allow you to add new methods to existing types without modifying the original source code. The `this` keyword is used to specify the type that the extension method is being added to, and the method is called as if it were an instance method on the type.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -44,11 +34,6 @@
 ### Answer
 > Strings are immutable, and you cannot modify it. Every time you want to modify it new instance is created. String builder is mutable. You don’t need to create a new instance when you want to modify it. String Builder has better performance
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -57,11 +42,6 @@
 > Reflection is a feature of language that allows a program to examine its own structure, including types, methods, properties, and fields, at runtime. It allows to discover and use information about an assembly, such as the types it contains, at runtime, rather than at compile time.
 Reflection makes it possible to write more generic and flexible code, but it also comes with a performance cost. Because reflection is typically used at runtime, it can add a significant overhead to your application.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -79,23 +59,13 @@ object o = i;  // Implicit boxing
 int j = (int)o;  // Explicit unboxing
 ```
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
 ## 6. What are value and reference types? Are value types always stored in Stack?
 ### Answer
 > Value types are typically stored on the stack, but they can also be stored on the heap if they are inside a reference type, such as an object. In C# and other languages that implement the Common Language Infrastructure, value types are allocated on the stack when they are defined as local variables, method parameters, or fields of a struct. However, when they are fields of a class or when they are boxed, they are allocated on the heap.
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Description         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Knows that value not always stored in Stack and can describe in depth                |
+             |
 ---
 <br/><br/>
 
@@ -109,11 +79,6 @@ int j = (int)o;  // Explicit unboxing
 
 >Read-only variables can only be initialized at the time of declaration or in a constructor.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Right Answer                |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -121,11 +86,6 @@ int j = (int)o;  // Explicit unboxing
 ### Answer
 > The using block is a C# construct that is used to ensure that a specific resource, such as a file or a database connection, is properly disposed of when it is no longer needed. The using block creates a new scope and automatically calls the Dispose method on an object when the block is exited. This can help to prevent resource leaks and ensure that resources are freed in a timely manner.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Right Answer                |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions that under the hood it is just a try catch finally block, where Dispose is called in the finally block |
 ---
 <br/><br/>
 
@@ -137,11 +97,6 @@ int j = (int)o;  // Explicit unboxing
 
 > The main difference between an interface and an abstract class is that a class can implement multiple interfaces, but it can only inherit from one abstract class. An interface defines a contract, and a class can choose to implement that contract, whereas an abstract class is a blueprint for a class, and a derived class must inherit from it.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -149,11 +104,6 @@ int j = (int)o;  // Explicit unboxing
 ### Answer
 > Using a delegate allows the programmer to encapsulate a reference to a method inside a delegate object. The delegate object can then be passed to code which can call the referenced method, without having to know at compile time which method will be invoked. In addition, we could use delegate to create custom event within a class 
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Describes how it works under the hood |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑ |
 ---
 <br/><br/>
 
@@ -161,11 +111,6 @@ int j = (int)o;  // Explicit unboxing
 ### Answer
 >A lambda expression is a shorthand notation for defining an anonymous function in C# and other programming languages that support functional programming. A lambda expression is a way to create a small, inline function without having to give it a name or define it in a separate method.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -183,11 +128,6 @@ int j = (int)o;  // Explicit unboxing
 
 > Basically one is compile time polymorphism and the other one is run time polymorphism. Also should describe how to achieve both 
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions last point |
 ---
 <br/><br/>
 
@@ -203,11 +143,6 @@ int j = (int)o;  // Explicit unboxing
 
 >In summary, an abstract class is a class that cannot be instantiated and is meant to be a base class for other classes, while a sealed class is a class that cannot be inherited by other classes. An abstract class can have abstract methods that must be overridden by the derived class, while a sealed class cannot have derived classes.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -240,11 +175,6 @@ var myClass = container.Resolve<IMyInterface>();
 
 >Overall, Dependency injection is a powerful technique that can help make your code more flexible, testable, and maintainable. There are several ways to implement it in C#, but using an IoC container is one of the most popular and easiest ways to do so.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          | Probably not mentions advantages |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -264,11 +194,6 @@ List<int> numbers = new List<int>();
 
 >Additionally, `List` class have more methods than arrays like `Add`, `Remove`, `Insert`, etc which makes it more powerful than arrays. Lists are also less memory efficient than arrays because they have an overhead of storing the size of the list, while arrays do not.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciption          |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -282,11 +207,6 @@ List<int> numbers = new List<int>();
 
 >In summary, both `Hashtable` and `Dictionary` are used to store key-value pairs, but a `Dictionary` is a generic version of `Hashtable`, and `Dictionary` is not thread-safe.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | Maybe knows answer          |                 |
-| **L3**    | Right answer                |                 |
 ---
 <br/><br/>
 
@@ -300,10 +220,5 @@ List<int> numbers = new List<int>();
 
 >A constructor is used to initialize an instance of a class while a static constructor is used to initialize a class and its static fields.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | Maybe knows answer          |                 |
-| **L3**    | Right answer                |                 |
 ---
 <br/><br/>

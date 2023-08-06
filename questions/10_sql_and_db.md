@@ -16,11 +16,6 @@ Performance: RDBs are generally better suited for complex queries and transactio
 
 >6. Handling Large Volume of Data: RDBs can handle large volume of data but it requires a lot of effort to scale them horizontally. NoSQL databases are designed to handle large volume of data with minimal overhead. 
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -34,11 +29,6 @@ Performance: RDBs are generally better suited for complex queries and transactio
 > * **Performance:** SQL Server is optimized for performance and can handle high-performance workloads, while SQLite is designed for smaller, lower-performance applications.
 > * **Deployment:** SQL Server typically requires a dedicated server for deployment, while SQLite can be easily embedded within an application and deployed on a wide range of platforms.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -53,11 +43,6 @@ Performance: RDBs are generally better suited for complex queries and transactio
 It's important to note that the CAP theorem is a theoretical concept, and that in practice, a distributed system might be able to achieve a good trade-off between the three guarantees depending on the use case and the specific implementation. 
 The CAP theorem is often used to help guide the design and implementation of distributed systems, and can be a useful tool for understanding the trade-offs that must be made when building a distributed system. 
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | Right Answer                |                 |
 ---
 <br/><br/>
 
@@ -71,12 +56,7 @@ The CAP theorem is often used to help guide the design and implementation of dis
 
 >An index allows the database to find and retrieve specific rows much faster than scanning every row in a table. 
 Indexes can be created on one or multiple columns of a table and can be created as unique or non-unique. In addition, indexes can be created on computed columns and can be filtered to include only certain rows. 
- 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+
 ---
 <br/><br/>
 
@@ -97,11 +77,6 @@ Indexes can be created on one or multiple columns of a table and can be created 
 * Difficult to debug: Stored procedures can be difficult to debug, especially when they are complex or have been written by someone else. 
 * Limited scalability: Stored procedures can be less scalable than other data access methods, especially when they are used to perform complex queries or operations. 
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -141,11 +116,6 @@ ON orders.customer_id = customers.customer_id;
 ```
 >In summary, joins allow you to combine data from multiple tables in a relational database based on a related column, and return the result in a single table. Different types of joins return different sets of data, depending on whether there is a match or not.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | In Depth Knowledge          |                 |
 ---
 <br/><br/>
 
@@ -159,23 +129,32 @@ ON orders.customer_id = customers.customer_id;
 * **Graph databases**, which store data in a graph format, with nodes and edges representing data entities and relationships. Examples include **Neo4j** and **TigerGraph**.
 * O**bject-oriented databases**, which store data in an object-oriented format, with each object having its own unique identity and behavior. Examples include **ZODB** and **ObjectDB**.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Not familiar                |                 |
-| **L2**    | Probably know couple of them |                 |
-| **L3**    | Can mention main types. Have some experience with working with them |                 |
 ---
 <br/><br/>
 
 ## 8. What is transaction and how it works?
 ### Answer
->
+>A database transaction is a fundamental concept in database management systems (DBMS) that ensures the ACID properties of database operations. ACID stands for Atomicity, Consistency, Isolation, and Durability, which are crucial for maintaining data integrity and reliability.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+> * **Atomicity:** A transaction is atomic, meaning it is treated as a single unit of work. Either all the operations within the transaction are completed successfully, or none of them are. If any part of the transaction fails, the entire transaction is rolled back, and the database returns to its original state.
+
+> * **Consistency:** The database should be in a consistent state before and after the transaction. In other words, a transaction should bring the database from one valid state to another valid state without violating any integrity constraints or business rules.
+
+> * **Isolation:** Transactions should be isolated from each other to avoid interference. Even if multiple transactions are executing simultaneously, the outcome should be as if they were executed sequentially. Isolation levels control the degree to which transactions are isolated from each other.
+
+> * **Durability:** Once a transaction is committed, its changes are permanent and survive any subsequent failures, such as system crashes. The changes made by the committed transaction should be persisted in the database and should not be lost due to system failures.
+
+>How it works:
+>When you begin a transaction in a database, you mark the start of a series of operations that should be treated as a single unit. The typical workflow of a transaction is as follows:
+
+> * **Begin Transaction:** The transaction starts, and the DBMS sets a savepoint to the current state of the database. This allows the system to roll back to this point if necessary.
+
+> * **Execute Operations:** You perform various read and write operations on the database within the transaction. These operations may include inserting, updating, or deleting records.
+
+> * **Commit or Rollback:** After completing the operations successfully, you have the option to commit the transaction. If you commit, all the changes made within the transaction are applied to the database, and the data is permanently updated. If any part of the transaction encounters an error or you explicitly decide to roll back, the transaction is aborted, and all the changes made within the transaction are discarded. The database returns to the state it was in when the transaction began.
+
+>By using transactions, you ensure that your database remains consistent and reliable even in the face of errors or concurrent access by multiple users or applications. Transactions help maintain data integrity and provide a mechanism for controlling the logical flow of operations that involve multiple database changes.
+
 ---
 <br/><br/>
 
@@ -216,11 +195,6 @@ await collection.UpdateOneAsync(filter, update);
 await collection.DeleteOneAsync(filter);
 ```
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | Probably know a bit         |                 |
-| **L3**    | Full answer                 |                 |
 ---
 <br/><br/>
 
@@ -249,11 +223,6 @@ Some of the potential drawbacks of using DynamoDB include:
 
 Overall, DynamoDB is a good choice for applications that require high scalability, high performance, and flexible data modeling, and are willing to trade off some control and complexity for the benefits of a fully managed service.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | Probably know a bit         |                 |
-| **L3**    | Full answer                 |                 |
 ---
 <br/><br/>
 

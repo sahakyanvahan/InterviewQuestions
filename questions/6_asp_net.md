@@ -16,11 +16,6 @@
 
 >That being said, it is important to keep in mind that Kestrel is not a full-featured production server, and it may not have all of the features and capabilities of more established production servers, such as IIS or Nginx. As a result, it is typically recommended to use Kestrel in combination with a reverse proxy server in production environments. This allows you to take advantage of the performance and scalability of Kestrel, while also leveraging the advanced security and management features of the reverse proxy server.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -34,11 +29,6 @@
 
 >`Configure` method: This method is used to configure the middleware components of the application. Middleware is executed in a pipeline, and the order of the components can be configured using this method.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -46,11 +36,6 @@
 ### Answer
 >In ASP.NET, middleware refers to software components that handle requests and responses between an application and the web server. These components can perform a variety of tasks such as authentication, routing, and caching. They are typically added to an application's pipeline using the built-in "Use" method, and they can be used to modify or extend the functionality of the application. Middleware components are often used to implement common functionality across multiple parts of an application, such as handling errors or logging data.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Right Answer                |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -58,11 +43,6 @@
 ### Answer
 >Controllers in ASP.NET Core MVC are responsible for handling user requests and returning responses to the user. They define action methods that correspond to specific user actions, such as submitting a form or clicking a button. Controllers use model binding to extract data from incoming requests, and they use views to generate the HTML that is returned to the user.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -71,11 +51,6 @@
 >Model binding in ASP.NET Core is a mechanism that maps the data from HTTP requests to action method parameters. This process makes it easier for developers to extract data from HTTP requests and use it in their application logic.
 >By using model binding, you don't have to manually extract data from the request and manually create an instance of the model. This makes it easier to write clean and maintainable code, as well as reducing the chances of bugs and security issues.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -83,11 +58,6 @@
 ### Answer
 >ASP.NET Core provides a number of built-in security features and technologies to help you secure your applications. These include authentication and authorization, encryption and SSL, input validation and output encoding, and cross-site scripting (XSS) and cross-site request forgery (CSRF) protection. You can also add additional security features and technologies as needed, such as using OAuth or OpenID Connect for external authentication, or using anti-forgery tokens to protect against CSRF attacks.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -95,11 +65,6 @@
 ### Answer
 >ASP.NET Core is designed to be highly scalable and deployable, and it supports a variety of hosting options, including on-premises, cloud-based, and containers. You can deploy ASP.NET Core applications using various deployment technologies and services, including IIS, Kestrel, Docker, and Azure. Additionally, you can use continuous integration and delivery (CI/CD) tools and services, such as Visual Studio Team Services, to automate the deployment process.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -126,11 +91,6 @@ public class MyService { }
 ```
 >In summary, the service lifetimes in ASP.NET Core determine how long a service is kept in memory, and how many instances of the service are created. There are 4 types of service lifetimes: `Transient`, `Scoped`, `Singleton`, and `Instance`. You can set the lifetime of a service by using the appropriate method of the IServiceCollection interface when adding the service to the DI container, or by using attributes.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions Instance |
 ---
 <br/><br/>
 
@@ -138,11 +98,6 @@ public class MyService { }
 ### Answer
 >ASP.NET Core provides a number of options for managing and storing configuration data for your application. This includes support for `appsettings.json`, environment variables, command-line arguments, and custom configuration sources. You can also use the `IConfiguration` interface and the `ConfigurationBuilder` class to manage and retrieve configuration data from various sources in your application. Additionally, you can use `Azure Key Vault` or other cloud-based configuration stores to manage and store sensitive configuration data securely.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -177,10 +132,5 @@ public class MyService { }
 
 >Both SSL and TLS are used to secure various types of internet communications, including web browsing, email, instant messaging, and voice-over-IP (VoIP) conversations. The use of SSL/TLS is essential for protecting sensitive information, and it is a critical component of online security.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>

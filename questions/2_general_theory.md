@@ -20,11 +20,6 @@
 
 >OOP is widely used in modern programming languages like Java, C#, Python, and many more. It's important to note that OOP is just one of the many programming paradigms and it's not the only way to solve a problem, other paradigms like functional programming and procedural programming also can be used to solve problems.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -41,11 +36,6 @@
 
 >An example of polymorphism is a shape class hierarchy where a `Shape` class has a `Draw()` method, and derived classes like `Circle`, `Square`, and `Triangle` have their own implementation of the `Draw()` method, and using polymorphism, you can call the `Draw()` method on a Shape reference that could be a Circle, Square or Triangle without knowing the specific type of the object at runtime.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -64,11 +54,6 @@
 
 >It is important to note that encapsulation is not about hiding information, it is about controlling the access to the information and keeping the object's internal state and behavior consistent and predictable.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -84,11 +69,6 @@
 
 >Inheritance is one of the fundamental concepts of OOP, and it is supported by most modern programming languages, including Java, C#, Python, and many more. It's important to note that Inheritance is just one way of achieving code reuse, other ways of code reuse are composition and interfaces.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -100,11 +80,6 @@
 
 >The goal is to minimize technical debt by designing and building software in a maintainable and scalable way, so that it can be easily updated and extended as business needs change. This is important because as the technical debt increases, it can become harder and more expensive to make changes to the software, which can slow down development and impact the business.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Desciptions         |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Can discuss the type of dept like intentional or unintentional |
 ---
 <br/><br/>
 
@@ -121,11 +96,6 @@
 
 >Different methodologies like Waterfall, Agile, Scrum, V-model etc are used to follow the above stages but it's not necessary that every SDLC model follows all the stages, it may vary as per organization and project requirement.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Can mention some steps|
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Can mention all steps |
 ---
 <br/><br/>
 
@@ -153,14 +123,5 @@
 * **CodeCracker**: This is an open-source tool that analyses code and finds issues, such as performance, security, style, and maintainability.
 > 
 
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Can mention a lot of metrics and tools|
 ---
 <br/><br/>
-
-# TODO: Add question about git
-# TODO: Maybe add question about terminals and bash

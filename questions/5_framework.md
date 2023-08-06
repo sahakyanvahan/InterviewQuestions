@@ -11,11 +11,6 @@
 
 >In summary, .NET Framework is a software development platform which provides a runtime environment, a large class library and a JIT compiler to develop, run and execute the applications. Developers can use different languages to write the code for the application and the framework will take care of the rest.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -53,11 +48,6 @@
 
 * The Base Class Library (BCL) which is a library of classes, interfaces, and value types that are included with the .NET Framework and provide a wide range of functionality for various areas such as data access, file I/O, networking, and more.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions main parts of .NET CLR |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
@@ -73,11 +63,6 @@
 
 >In summary, JIT compiler is a type of compiler that compiles the code at runtime and it is a part of the runtime environment of the .NET Framework. The JIT compiler takes the IL code and converts it into machine code that can be executed by the host machine's CPU. This provides several advantages like faster execution time, better performance, efficient memory usage, and support for dynamic code generation, reflection, and updates.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -99,11 +84,6 @@
 
 >In summary, Garbage collector is a component of .NET CLR, which automatically manages memory used by a program. It periodically scans memory, identifies and marks objects that are no longer in use, and frees up memory for the program to use. The GC uses a concept of generations to organize objects in memory, and you don't need to use it specifically, as it runs automatically. However, you can force a garbage collection at a specific point in your code if you need to.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions about GC.Collect, Finalize, which is protected and should be overriden and SuppressFinalize and Dispose |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Mentions about generations  |
 ---
 <br/><br/>
 
@@ -132,11 +112,6 @@
 
 >Additionally, there are also satellite assemblies, which are assemblies that contain resources for a specific language or culture. They are used to provide localized resources for an application, such as translated strings or images. Satellite assemblies are typically deployed in the same directory as the main assembly, and they have a specific naming convention, such as "MyAssembly.resources.dll"
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Description         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Should mention some parts of assembly |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | Should mention all parts of assembly |
 ---
 <br/><br/>
 
@@ -144,11 +119,6 @@
 ## Answer
 > Managed code is code that runs within the CLR and is managed by the CLR's memory manager, while unmanaged code is code that runs outside of the CLR and is not managed by the CLR's memory manager. Examples of unmanaged code in the .NET framework include C/C++ code that is called via P/Invoke.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Not sure what it i          |                 |
-| **L3**    | Right answer                |                 |
 ---
 <br/><br/>
 
@@ -174,12 +144,6 @@ var orders = customer.Orders;
 
 >In summary, the main difference between eager loading and lazy loading in EF Core is when the related data is loaded: Eager loading loads the related data along with the main data in a single query, while lazy loading loads the related data only when it is specifically accessed. Eager loading can be more efficient when you know that you will need the related data and you want to load it all in one query, whereas lazy loading can be more efficient when you only need the related data occasionally and you want to avoid loading it until it is needed.
 
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer or not sure       |                 |
-| **L2**    | General describtion         |                 |
-| **L3**    | Detailed describtion        | Mentions `virtual ` keyword in navigation properties |
 ---
 <br/><br/>
 
@@ -201,23 +165,15 @@ var customers = from c in context.Customers
 
 >In summary, LINQ is a set of features in C# and Visual Basic that provides a consistent and expressive syntax for querying and manipulating data in various data sources. It allows developers to write queries in a declarative way, using a syntax that is similar to SQL, and it reduces the amount of code that needs to be written to perform common data operations. LINQ also includes a set of standard query operators that can be used to perform a wide range of data operations on in-memory data structures, as well as on data sources that implement the IQueryable interface, such as databases and XML documents.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
 ## 10. Are you familiar with `AsNoTracking` extension method?
 ### Answer 
->
+> AsNoTracking method is used in Entity Framework, specifically with Entity Framework Core (EF Core). It serves the purpose of improving performance by disabling change tracking for entities retrieved from the database. Change tracking is a feature in EF Core that keeps track of changes made to entities during their lifetime within the context. When change tracking is enabled, EF Core monitors changes to the entities, so it can automatically save those changes to the database when you call SaveChanges().
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
+> However, in certain scenarios, you might not need change tracking, especially when you are only retrieving data for read-only operations or when you are querying a large dataset and don't intend to update or insert any records back into the database. In such cases, using AsNoTracking can help you avoid the overhead of change tracking and improve query performance.
+
 ---
 <br/><br/>
 
@@ -227,11 +183,6 @@ var customers = from c in context.Customers
 
 >`FirstOrDefault()` method will return a default value for the type of elements in the sequence if the sequence is empty. The default value for value types is 0 for numeric types and false for bool, and for reference types it is null. This method is used when the sequence might be empty and you want to handle this case gracefully, without raising an error.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         |                 |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -245,11 +196,6 @@ var customers = from c in context.Customers
 
 >In short, IEnumerable is for in-memory collection and IQueryable is for database querying.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Desciptions         |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -257,11 +203,6 @@ var customers = from c in context.Customers
 ### Answer
 >Code First Migrations is a feature in Entity Framework (EF) that allows you to manage changes to your database schema over time, as your application evolves. With Code First Migrations, you can define your database schema using C# classes, and then use EF to automatically generate and apply changes to the database as needed.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Desciptions         |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -284,11 +225,6 @@ var customers = from c in context.Customers
 
 > * **Middleware:** ASP.NET Core includes a middleware pipeline that allows you to easily add custom logic to your application's request/response pipeline. ASP.NET doesn't have an equivalent feature.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -297,11 +233,6 @@ var customers = from c in context.Customers
 
 > Action filters are a feature of the MVC framework that allow developers to add custom logic to the processing pipeline for controller actions. Action filters can be used to perform tasks such as authentication, logging, caching, and error handling, and they can be applied globally to all actions in a controller or individually to specific actions. The MVC framework includes several built-in action filters, such as the [Authorize] filter for handling authentication and the [OutputCache] filter for caching output, but developers can also create their own custom action filters by deriving from the ActionFilterAttribute class.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -310,11 +241,6 @@ var customers = from c in context.Customers
 
 > The Global.asax file is a special file that is used to define application-level events and configuration settings in an ASP.NET application. It contains event handlers for important application-level events, such as Application_Start and Application_End, as well as configuration settings that apply to the entire application, such as custom error handling and session state configuration.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -323,10 +249,5 @@ var customers = from c in context.Customers
 
 > ASP.NET routing allows you to map URLs to specific actions or controllers in your application, which makes it easier to create user-friendly URLs and to handle complex routing scenarios. You can configure routing in your application by using the routing configuration settings in the web.config file or by using attributes and routing templates in your controllers or actions. You can also create custom route handlers to handle more complex routing scenarios, such as dynamic routing based on user input or custom URL schemes.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>

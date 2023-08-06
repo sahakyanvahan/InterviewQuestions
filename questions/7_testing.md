@@ -13,11 +13,6 @@
 
 >By following the FIRST principles, you can write unit tests that are efficient, reliable, and effective in detecting errors in your code. This can help you to maintain a high-quality codebase, reduce the risk of bugs and regression, and improve your overall development process.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Desciptions         |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -37,11 +32,6 @@
 
 >It's worth noting that the testing pyramid is a guideline, not a strict rule, and there may be cases where you need to deviate from the pyramid, depending on the specific requirements of your project. However, in general, following the testing pyramid can help you to write effective and efficient tests for your software.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Desciptions         |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -57,11 +47,6 @@
 
 >NUnit creates an instance of test class for each method while XUnit creates one instance of a class for all methods in that class 
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | General Answer              | Mentions last point |
-| **L3**    | General Answer              | Mentions other points as well |
 ---
 <br/><br/>
 
@@ -102,11 +87,6 @@
 
 >In TDD, the "Red-Green-Refactor" approach is repeated for each new feature or change you want to make to the code. This results in a suite of tests that provide a safety net for your code, making it easier to catch and fix bugs, and ensuring that new changes don't break existing functionality.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -138,11 +118,6 @@
 
 > To use these tools, you typically need to include them as a dependency in your project and configure them to work with your test framework. Once the tool is configured, you can run the mutation testing process, which involves generating mutations, running the test suite against the mutated code, and analyzing the results.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>
 
@@ -179,10 +154,5 @@ public class MyClassTests
 
 >It's important to note that relying on `PrivateObject` to test private members of a class goes against the principles of unit testing, as it tightly couples the tests to the implementation details of the class. It's better to refactor the code and test the public API of the class instead, whenever possible.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | No Answer                   |                 |
-| **L2**    | Right Answer                |                 |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               |                 |
 ---
 <br/><br/>

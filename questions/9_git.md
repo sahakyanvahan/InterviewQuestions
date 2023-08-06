@@ -6,12 +6,6 @@
 ### Answer
 > Git is a distributed version control system that allows developers to track changes to their code over time, collaborate with other developers on the same codebase, and maintain a history of all changes made to the code. Git is useful for software development because it enables developers to work on different parts of a project simultaneously, merge changes from multiple sources, and revert to previous versions of the code if necessary.
 
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -29,11 +23,6 @@
 
 > In general, merge is a good choice when you want to preserve the history of the branches and the changes they represent, while rebase is a good choice when you want to create a cleaner and more linear history, or when you need to incorporate changes from a branch that has diverged significantly from the main codebase.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -47,11 +36,6 @@
 
 > Git stash can be particularly useful in situations where you need to switch between tasks quickly, or when you need to work on multiple tasks simultaneously. It allows you to save your work without committing it to the repository, which can help to keep your commit history clean and organized. It is also useful when you need to share changes with other developers for review or testing, as you can easily create a stash and send it to others for review.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -73,11 +57,5 @@
 
 > Each branching strategy has its own advantages and disadvantages, and the best strategy for your team will depend on a variety of factors, such as the size and complexity of your project, the number of developers on your team, and your overall development process. The key is to choose a strategy that fits the needs of your team and helps you to work more efficiently and effectively with Git.
 
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>

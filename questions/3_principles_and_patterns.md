@@ -23,23 +23,12 @@
 > >4. Idiomatic – “feels natural”
 > >5. Domain-based – “the solution domain models the problem domain in language and structure”
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | The more the better |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
 ## 2. Can you please tell me an example where you used SOLID principles. What was the advantages of using them?
 ### Answer
-> Free answer
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
@@ -100,11 +89,6 @@ Interpreter: Implements a specialized language by representing its grammar rules
 
 >These are just some of the most common design patterns, there are many more out there. Each pattern serves a specific purpose and can be used in different situations to solve common software design problems. They are not meant to be applied blindly, but rather used as a tool to help guide the design of a software system.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -123,11 +107,6 @@ Interpreter: Implements a specialized language by representing its grammar rules
 
 >In summary, the Builder pattern is used to create complex objects step-by-step, with customization options, while the Factory pattern is used to create objects of different types based on runtime criteria.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
@@ -154,11 +133,6 @@ Interpreter: Implements a specialized language by representing its grammar rules
 
 >These patterns help to improve the maintainability, scalability, and testability of the software by reducing the coupling and increasing the cohesion between the objects and classes.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
@@ -272,23 +246,12 @@ public class Client
 }
 ```
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
 ## 4. Which architectural patterns have you used in your projects? (MVC, MVVM, Layered Architecture, Clean Architecture)  
 ### Answer
->Free answer
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
@@ -323,11 +286,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 
 >In summary, a REST API is a set of rules and conventions for building web services that adhere to the REST architectural style. It defines a set of endpoints that a client can interact with to retrieve and manipulate resources, and is typically associated with standard CRUD operations and HTTP verbs.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know much             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -345,11 +303,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 
 >It's important to note that CQRS is not a design pattern for a specific technology or programming language, but a pattern for the architecture of a system.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -367,11 +320,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 
 >The choice of pattern will depend on the specific requirements of your application, and there may be other patterns that are better suited to your use case. It's also worth noting that many modern web frameworks provide built-in support for database communication, and you may not need to implement these patterns manually in your code.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know                  |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -403,13 +351,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 > 
 >Overall, the microservices architecture allows for greater agility, scalability, and resilience, making it a popular choice for modern, complex software systems.
 
-
-
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -426,11 +367,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 >* **Services:** Operations that do not naturally fit within an Entity or Value Object, but still represent a business capability.
 >* **Ubiquitous Language:** A shared language between the development team and the business stakeholders, used to ensure that the software design accurately reflects the business needs.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -446,11 +382,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 
 >It's important to note that the LSP is not a hard rule and it's not always easy or practical to follow it strictly. Sometimes, it's necessary to break the LSP in order to achieve other goals, such as performance or security. But it should be done with care, and always in a way that's easy to understand, maintain, and extend.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | Gives resonable example |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
 
@@ -482,11 +413,6 @@ They are also easy to test, and can be easily integrated with other systems and 
 
 >These are just a few examples of the tools and techniques available for validation in .NET, depending on the specific needs of the application, developers can choose the best tool that fits the requirement.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Basic Knowledge             |                 |
-| **L2**    | General Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -505,11 +431,6 @@ Microsoft's in-memory caching framework, ASP.NET Core Memory Cache: This is a bu
 
 * **StackExchange.Redis** : it is a high-performance general-purpose redis client for .NET languages.
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | Don't know much             |                 |
-| **L2**    | Basic   Knowledge           |                 |
-| **L3**    | Strong in Depth Knowledge   |                 |
 ---
 <br/><br/>
 
@@ -560,10 +481,5 @@ The request and response can contain many more headers, like cookies, auth token
 The server can forward the request to another server, this process can happen multiple times before the final response is sent to the client.
 Also, ASP.NET Core is the latest version of ASP.NET, which is a redesign of the original ASP.NET and it has some differences in the way it handles requests and creates responses compared to the older versions of ASP.NET
 
-| **Level** | **Expectaions**             | **Notes**       |
-|-----------|-----------------------------|-----------------|
-| **L1**    | General Desciptions         | The more the better |
-| **L2**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
-| **L3**    | ↑↑↑↑↑↑↑↑↑↑↑↑↑               | ↑↑↑↑↑↑↑↑↑↑↑↑↑   |
 ---
 <br/><br/>
