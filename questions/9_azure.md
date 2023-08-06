@@ -173,3 +173,37 @@
 
 ---
 <br/><br/>
+
+## 7. What is azure service bus. What's the purpose of it? What parts it consist's of?
+### Answer
+> Azure Service Bus is a cloud-based messaging service provided by Microsoft Azure. It enables communication and coordination between different applications, services, and components in a distributed system. Service Bus offers several messaging capabilities, including message queuing and publish/subscribe patterns, making it suitable for building reliable, scalable, and decoupled systems in the cloud.
+
+>The purpose of Azure Service Bus is to facilitate the exchange of messages between different components of a distributed application or system. It helps decouple the sender and receiver of messages, allowing them to communicate asynchronously without being tightly coupled to each other. This decoupling improves the overall reliability, scalability, and flexibility of the application.
+
+>Key features and parts of Azure Service Bus include:
+
+>* **Queues:** Service Bus Queues provide a reliable and asynchronous messaging mechanism for one-to-one communication. Messages are sent to a queue by the sender and then picked up and processed by the receiver (consumer) in a first-in, first-out (FIFO) manner.
+
+>* **Topics and Subscriptions:** Service Bus Topics allow for one-to-many communication using a publish/subscribe pattern. Publishers send messages to a topic, and multiple subscribers (subscriptions) can receive copies of those messages independently.
+
+>* **Reliable Messaging:** Azure Service Bus ensures message delivery, even in the face of network failures or system crashes, using a combination of message persistence and retries.
+
+>* **Message Sessions:** Service Bus supports session-based messaging, enabling a single receiver to process related messages in a specific order. This is useful for scenarios where message ordering is critical, such as processing transactions.
+
+>* **Dead-letter Queue:** Messages that cannot be processed successfully are moved to the Dead-letter Queue, allowing developers to investigate and handle failed messages separately.
+
+>* **Partitioning:** Service Bus supports partitioning of queues and topics to handle high throughput scenarios and distribute the load across multiple messaging nodes.
+
+>* **Authorization and Authentication:** Service Bus provides various security mechanisms, including Shared Access Signatures (SAS) and Azure Active Directory (Azure AD) integration, to control access to the messaging entities.
+
+>Azure Service Bus is commonly used in scenarios such as:
+
+>Decoupling application components to enhance scalability and maintainability.
+Implementing event-driven architectures with publish/subscribe patterns.
+Handling asynchronous communication between microservices in cloud-based applications.
+Supporting message processing and workflows in distributed systems.
+By utilizing Azure Service Bus, developers can build distributed and loosely coupled systems that can scale gracefully and handle messaging reliably in the cloud environment.
+
+---
+<br/><br/>
+
